@@ -11,6 +11,11 @@ import { bugStyles } from './bugs.mjs';
 
 const FONTS_HREF = 'https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;1,400&display=swap';
 
+// The Superflow toolbar (staging), exactly as the project's install snippet gives it. Loaded on
+// every page so reviewers can see the agent's comments on the live site. It lives outside
+// `.page`, and both the capture strategy and scripts/dump-layout.mjs ignore it.
+const SUPERFLOW_TOOLBAR_SCRIPT = '<script id="superflowToolbarScript" data-sf-platform="other-manual" async src="https://cdn.jsdelivr.net/npm/@usesuperflow/toolbar-staging/superflow.min.js?apiKey=rNYzMJd13L27xtfipmSK&projectId=8682140702645878"></script>';
+
 const esc = (value) => String(value).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
 function documentShell({ title, description, bodyClass, bugs, body, variant }) {
@@ -28,6 +33,7 @@ function documentShell({ title, description, bodyClass, bugs, body, variant }) {
 <link rel="stylesheet" href="${FONTS_HREF}">
 <link rel="stylesheet" href="/styles.css">
 ${bugStyles([...bugs])}
+${SUPERFLOW_TOOLBAR_SCRIPT}
 </head>
 <body${bodyClass ? ` class="${bodyClass}"` : ''}>
 <div class="page">

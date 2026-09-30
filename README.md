@@ -141,7 +141,11 @@ The site is static; `vercel.json` sets `public/` as the output, clean URLs (`/pr
 vercel deploy --prod
 ```
 
-Deployment URL: `https://<your-deployment>.vercel.app` (fill in after the first deploy). Check `/variants` there to confirm all six paths.
+Deployment URL: https://figma-diff-test-site.vercel.app (pushes to `main` redeploy it). Check `/variants` there to confirm all six paths.
+
+### Superflow toolbar
+
+Every page loads the Superflow staging toolbar from its install snippet (`SUPERFLOW_TOOLBAR_SCRIPT` in `src/templates.mjs`), so the agent's comments can be reviewed on the live pages. The snippet's key is the public install key every embedding site exposes. The toolbar sits outside `.page`: the agent's capture ignores Superflow and Velt elements, and `scripts/dump-layout.mjs` only reads `.page`, so neither the comparison nor a frame rebuild sees it.
 
 ## Map the frames in Superflow
 

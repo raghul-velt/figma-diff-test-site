@@ -196,7 +196,9 @@ function collect() {
 		return new XMLSerializer().serializeToString(clone).replace(/\s+xmlns:xlink="[^"]*"/, '');
 	}
 
-	const all = [...document.body.querySelectorAll('*')];
+	// Only the page's own content: the Superflow toolbar and anything it injects live outside `.page`.
+	const root = document.querySelector('.page') || document.body;
+	const all = [...root.querySelectorAll('*')];
 	const textOwners = new Set();
 	const claimed = (el) => { for (let n = el.parentElement; n; n = n.parentElement) if (textOwners.has(n)) return true; return false; };
 	const recorded = new Map();
