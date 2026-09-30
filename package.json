@@ -1,0 +1,15 @@
+{
+  "name": "figma-diff-test-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Test kit for Superflow's Figma Comparison agent: a static site with clean and seeded-buggy variants, Figma frames generated from the clean pages, and an answer key.",
+  "type": "module",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "serve": "node scripts/serve.mjs",
+    "dump": "node scripts/dump-layout.mjs",
+    "figma:scripts": "node scripts/figma/generate-scripts.mjs",
+    "score": "node scripts/score-run.mjs"
+  }
+}

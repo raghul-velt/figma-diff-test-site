@@ -1,0 +1,2490 @@
+{
+	"page": "pricing",
+	"frame": "Pricing",
+	"path": "/clean/pricing",
+	"buggyPath": "/pricing",
+	"viewport": {
+		"width": 1440,
+		"height": 900,
+		"mobile": false
+	},
+	"document": {
+		"width": 1440,
+		"height": 1785
+	},
+	"fonts": [
+		{
+			"family": "Inter",
+			"weight": 700,
+			"italic": false
+		},
+		{
+			"family": "Inter",
+			"weight": 500,
+			"italic": false
+		},
+		{
+			"family": "Inter",
+			"weight": 600,
+			"italic": false
+		},
+		{
+			"family": "Inter",
+			"weight": 400,
+			"italic": false
+		}
+	],
+	"elements": [
+		{
+			"id": "e2",
+			"name": "Nav bar",
+			"tag": "header",
+			"box": {
+				"x": 0,
+				"y": 0,
+				"w": 1440,
+				"h": 73
+			},
+			"kind": "box",
+			"background": "#FFFFFF",
+			"radius": 0,
+			"border": {
+				"bottom": {
+					"width": 1,
+					"color": "#E5E7EB"
+				}
+			},
+			"clips": false,
+			"parent": "root"
+		},
+		{
+			"id": "e5",
+			"name": "Logo mark",
+			"tag": "svg",
+			"box": {
+				"x": 120,
+				"y": 22,
+				"w": 28,
+				"h": 28
+			},
+			"kind": "asset",
+			"svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"28\" height=\"28\" viewBox=\"0 0 28 28\" fill=\"none\"><rect width=\"28\" height=\"28\" rx=\"8\" fill=\"#4F46E5\"/><circle cx=\"14\" cy=\"14\" r=\"6\" stroke=\"#FFFFFF\" stroke-width=\"2.5\"/><circle cx=\"21\" cy=\"7.5\" r=\"2.5\" fill=\"#A5B4FC\"/></svg>",
+			"parent": "e2"
+		},
+		{
+			"id": "e9",
+			"name": "Logo wordmark",
+			"tag": "span",
+			"box": {
+				"x": 158,
+				"y": 22,
+				"w": 47.23,
+				"h": 28
+			},
+			"kind": "text",
+			"text": "Orbit",
+			"renderedText": "Orbit",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 700,
+				"italic": false,
+				"size": 20,
+				"lineHeight": 28,
+				"letterSpacing": -0.4
+			},
+			"color": "#101828",
+			"textAlign": "start",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 47.23,
+			"parent": "e2"
+		},
+		{
+			"id": "e10",
+			"name": "Nav links",
+			"tag": "nav",
+			"box": {
+				"x": 261.23,
+				"y": 24,
+				"w": 347.09,
+				"h": 24
+			},
+			"kind": "container",
+			"direction": "horizontal",
+			"gap": 32,
+			"alignItems": "normal",
+			"justifyContent": "normal",
+			"parent": "e2",
+			"children": [
+				"e11",
+				"e12",
+				"e13",
+				"e14"
+			],
+			"measuredGaps": [
+				32,
+				32,
+				32
+			]
+		},
+		{
+			"id": "e11",
+			"name": "Nav link Product",
+			"tag": "a",
+			"box": {
+				"x": 261.23,
+				"y": 24,
+				"w": 56.27,
+				"h": 24
+			},
+			"kind": "text",
+			"text": "Product",
+			"renderedText": "Product",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 500,
+				"italic": false,
+				"size": 15,
+				"lineHeight": 24,
+				"letterSpacing": 0
+			},
+			"color": "#4B5563",
+			"textAlign": "start",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 56.27,
+			"parent": "e10"
+		},
+		{
+			"id": "e12",
+			"name": "Nav link Solutions",
+			"tag": "a",
+			"box": {
+				"x": 349.5,
+				"y": 24,
+				"w": 66.61,
+				"h": 24
+			},
+			"kind": "text",
+			"text": "Solutions",
+			"renderedText": "Solutions",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 500,
+				"italic": false,
+				"size": 15,
+				"lineHeight": 24,
+				"letterSpacing": 0
+			},
+			"color": "#4B5563",
+			"textAlign": "start",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 66.61,
+			"parent": "e10"
+		},
+		{
+			"id": "e13",
+			"name": "Nav link Pricing",
+			"tag": "a",
+			"box": {
+				"x": 448.11,
+				"y": 24,
+				"w": 50.08,
+				"h": 24
+			},
+			"kind": "text",
+			"text": "Pricing",
+			"renderedText": "Pricing",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 500,
+				"italic": false,
+				"size": 15,
+				"lineHeight": 24,
+				"letterSpacing": 0
+			},
+			"color": "#4B5563",
+			"textAlign": "start",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 50.08,
+			"parent": "e10"
+		},
+		{
+			"id": "e14",
+			"name": "Nav link Customers",
+			"tag": "a",
+			"box": {
+				"x": 530.19,
+				"y": 24,
+				"w": 78.14,
+				"h": 24
+			},
+			"kind": "text",
+			"text": "Customers",
+			"renderedText": "Customers",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 500,
+				"italic": false,
+				"size": 15,
+				"lineHeight": 24,
+				"letterSpacing": 0
+			},
+			"color": "#4B5563",
+			"textAlign": "start",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 78.14,
+			"parent": "e10"
+		},
+		{
+			"id": "e17",
+			"name": "Sign in label",
+			"tag": "span",
+			"box": {
+				"x": 1139.77,
+				"y": 26,
+				"w": 52.61,
+				"h": 20
+			},
+			"kind": "text",
+			"text": "Sign in",
+			"renderedText": "SIGN IN",
+			"textTransform": "uppercase",
+			"font": {
+				"family": "Inter",
+				"weight": 600,
+				"italic": false,
+				"size": 13,
+				"lineHeight": 20,
+				"letterSpacing": 0.6
+			},
+			"color": "#374151",
+			"textAlign": "start",
+			"alignHint": "center",
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 52.61,
+			"parent": "e2"
+		},
+		{
+			"id": "e18",
+			"name": "Get started button",
+			"tag": "a",
+			"box": {
+				"x": 1212.38,
+				"y": 16,
+				"w": 107.63,
+				"h": 40
+			},
+			"kind": "box",
+			"background": "#4F46E5",
+			"radius": 8,
+			"clips": false,
+			"parent": "e2"
+		},
+		{
+			"id": "e19",
+			"name": "Get started label",
+			"tag": "span",
+			"box": {
+				"x": 1228.38,
+				"y": 26,
+				"w": 75.63,
+				"h": 20
+			},
+			"kind": "text",
+			"text": "Get started",
+			"renderedText": "Get started",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 600,
+				"italic": false,
+				"size": 14,
+				"lineHeight": 20,
+				"letterSpacing": 0
+			},
+			"color": "#FFFFFF",
+			"textAlign": "start",
+			"alignHint": "center",
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 75.63,
+			"parent": "e18"
+		},
+		{
+			"id": "e23",
+			"name": "Pricing title",
+			"tag": "h1",
+			"box": {
+				"x": 120,
+				"y": 153,
+				"w": 1200,
+				"h": 56
+			},
+			"kind": "text",
+			"text": "Simple pricing for every team",
+			"renderedText": "Simple pricing for every team",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 700,
+				"italic": false,
+				"size": 48,
+				"lineHeight": 56,
+				"letterSpacing": -1
+			},
+			"color": "#101828",
+			"textAlign": "center",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 659.44,
+			"parent": "root"
+		},
+		{
+			"id": "e24",
+			"name": "Pricing subtitle",
+			"tag": "p",
+			"box": {
+				"x": 400,
+				"y": 229,
+				"w": 640,
+				"h": 56
+			},
+			"kind": "text",
+			"text": "Start free, then upgrade when your team is ready. Every paid plan includes a 30-day trial.",
+			"renderedText": "Start free, then upgrade when your team is ready. Every paid plan includes a 30-day trial.",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 400,
+				"italic": false,
+				"size": 18,
+				"lineHeight": 28,
+				"letterSpacing": 0
+			},
+			"color": "#4B5563",
+			"textAlign": "center",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 2,
+			"textWidth": 635.25,
+			"parent": "root"
+		},
+		{
+			"id": "e26",
+			"name": "Plans row",
+			"tag": "div",
+			"box": {
+				"x": 120,
+				"y": 349,
+				"w": 1200,
+				"h": 495
+			},
+			"kind": "container",
+			"direction": "horizontal",
+			"gap": 24,
+			"alignItems": "stretch",
+			"justifyContent": "normal",
+			"parent": "root",
+			"children": [
+				"e27",
+				"e61",
+				"e97"
+			],
+			"measuredGaps": [
+				24,
+				24
+			]
+		},
+		{
+			"id": "e27",
+			"name": "Starter plan card",
+			"tag": "article",
+			"box": {
+				"x": 120,
+				"y": 349,
+				"w": 384,
+				"h": 495
+			},
+			"kind": "box",
+			"background": "#FFFFFF",
+			"radius": 16,
+			"border": {
+				"top": {
+					"width": 1,
+					"color": "#E5E7EB"
+				},
+				"right": {
+					"width": 1,
+					"color": "#E5E7EB"
+				},
+				"bottom": {
+					"width": 1,
+					"color": "#E5E7EB"
+				},
+				"left": {
+					"width": 1,
+					"color": "#E5E7EB"
+				}
+			},
+			"clips": false,
+			"parent": "e26"
+		},
+		{
+			"id": "e28",
+			"name": "Starter plan name",
+			"tag": "h3",
+			"box": {
+				"x": 153,
+				"y": 382,
+				"w": 318,
+				"h": 28
+			},
+			"kind": "text",
+			"text": "Starter",
+			"renderedText": "Starter",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 600,
+				"italic": false,
+				"size": 20,
+				"lineHeight": 28,
+				"letterSpacing": 0
+			},
+			"color": "#101828",
+			"textAlign": "start",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 66.59,
+			"parent": "e27"
+		},
+		{
+			"id": "e29",
+			"name": "Starter plan description",
+			"tag": "p",
+			"box": {
+				"x": 153,
+				"y": 418,
+				"w": 318,
+				"h": 24
+			},
+			"kind": "text",
+			"text": "For individuals and side projects",
+			"renderedText": "For individuals and side projects",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 400,
+				"italic": false,
+				"size": 15,
+				"lineHeight": 24,
+				"letterSpacing": 0
+			},
+			"color": "#4B5563",
+			"textAlign": "start",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 228.34,
+			"parent": "e27"
+		},
+		{
+			"id": "e30",
+			"name": "Starter plan price",
+			"tag": "p",
+			"box": {
+				"x": 153,
+				"y": 466,
+				"w": 318,
+				"h": 56
+			},
+			"kind": "text",
+			"text": "$0/month",
+			"renderedText": "$0/month",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 700,
+				"italic": false,
+				"size": 48,
+				"lineHeight": 56,
+				"letterSpacing": -1
+			},
+			"color": "#101828",
+			"textAlign": "start",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 116.3,
+			"runs": [
+				{
+					"start": 0,
+					"end": 2,
+					"family": "Inter",
+					"weight": 700,
+					"italic": false,
+					"size": 48,
+					"lineHeight": 56,
+					"letterSpacing": -1,
+					"color": "#101828",
+					"underline": false
+				},
+				{
+					"start": 2,
+					"end": 8,
+					"family": "Inter",
+					"weight": 500,
+					"italic": false,
+					"size": 16,
+					"lineHeight": 24,
+					"letterSpacing": 0,
+					"color": "#6B7280",
+					"underline": false
+				}
+			],
+			"parent": "e27"
+		},
+		{
+			"id": "e33",
+			"name": "Starter plan button",
+			"tag": "a",
+			"box": {
+				"x": 153,
+				"y": 546,
+				"w": 318,
+				"h": 44
+			},
+			"kind": "box",
+			"background": "#FFFFFF",
+			"radius": 8,
+			"border": {
+				"top": {
+					"width": 1,
+					"color": "#D1D5DB"
+				},
+				"right": {
+					"width": 1,
+					"color": "#D1D5DB"
+				},
+				"bottom": {
+					"width": 1,
+					"color": "#D1D5DB"
+				},
+				"left": {
+					"width": 1,
+					"color": "#D1D5DB"
+				}
+			},
+			"clips": false,
+			"parent": "e27"
+		},
+		{
+			"id": "e34",
+			"name": "Starter plan button label",
+			"tag": "span",
+			"box": {
+				"x": 277.88,
+				"y": 556,
+				"w": 68.25,
+				"h": 24
+			},
+			"kind": "text",
+			"text": "Start free",
+			"renderedText": "Start free",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 600,
+				"italic": false,
+				"size": 15,
+				"lineHeight": 24,
+				"letterSpacing": 0
+			},
+			"color": "#101828",
+			"textAlign": "start",
+			"alignHint": "center",
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 68.25,
+			"parent": "e33"
+		},
+		{
+			"id": "e35",
+			"name": "Starter plan features",
+			"tag": "ul",
+			"box": {
+				"x": 153,
+				"y": 618,
+				"w": 318,
+				"h": 193
+			},
+			"kind": "box",
+			"radius": 0,
+			"border": {
+				"top": {
+					"width": 1,
+					"color": "#E5E7EB"
+				}
+			},
+			"clips": false,
+			"parent": "e27"
+		},
+		{
+			"id": "e37",
+			"name": "Starter check 1",
+			"tag": "svg",
+			"box": {
+				"x": 153,
+				"y": 645,
+				"w": 20,
+				"h": 20
+			},
+			"kind": "asset",
+			"svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\"><circle cx=\"10\" cy=\"10\" r=\"10\" fill=\"#EEF2FF\"/><path d=\"M6 10.4l2.6 2.6L14 7.6\" stroke=\"#4F46E5\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>",
+			"parent": "e35"
+		},
+		{
+			"id": "e40",
+			"name": "Starter feature 1",
+			"tag": "span",
+			"box": {
+				"x": 185,
+				"y": 643,
+				"w": 117.33,
+				"h": 24
+			},
+			"kind": "text",
+			"text": "3 active projects",
+			"renderedText": "3 active projects",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 400,
+				"italic": false,
+				"size": 15,
+				"lineHeight": 24,
+				"letterSpacing": 0
+			},
+			"color": "#374151",
+			"textAlign": "start",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 117.33,
+			"parent": "e35"
+		},
+		{
+			"id": "e42",
+			"name": "Starter check 2",
+			"tag": "svg",
+			"box": {
+				"x": 153,
+				"y": 681,
+				"w": 20,
+				"h": 20
+			},
+			"kind": "asset",
+			"svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\"><circle cx=\"10\" cy=\"10\" r=\"10\" fill=\"#EEF2FF\"/><path d=\"M6 10.4l2.6 2.6L14 7.6\" stroke=\"#4F46E5\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>",
+			"parent": "e35"
+		},
+		{
+			"id": "e45",
+			"name": "Starter feature 2",
+			"tag": "span",
+			"box": {
+				"x": 185,
+				"y": 679,
+				"w": 139.69,
+				"h": 24
+			},
+			"kind": "text",
+			"text": "Unlimited reviewers",
+			"renderedText": "Unlimited reviewers",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 400,
+				"italic": false,
+				"size": 15,
+				"lineHeight": 24,
+				"letterSpacing": 0
+			},
+			"color": "#374151",
+			"textAlign": "start",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 139.69,
+			"parent": "e35"
+		},
+		{
+			"id": "e47",
+			"name": "Starter check 3",
+			"tag": "svg",
+			"box": {
+				"x": 153,
+				"y": 717,
+				"w": 20,
+				"h": 20
+			},
+			"kind": "asset",
+			"svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\"><circle cx=\"10\" cy=\"10\" r=\"10\" fill=\"#EEF2FF\"/><path d=\"M6 10.4l2.6 2.6L14 7.6\" stroke=\"#4F46E5\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>",
+			"parent": "e35"
+		},
+		{
+			"id": "e50",
+			"name": "Starter feature 3",
+			"tag": "span",
+			"box": {
+				"x": 185,
+				"y": 715,
+				"w": 174.8,
+				"h": 24
+			},
+			"kind": "text",
+			"text": "Comments on live pages",
+			"renderedText": "Comments on live pages",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 400,
+				"italic": false,
+				"size": 15,
+				"lineHeight": 24,
+				"letterSpacing": 0
+			},
+			"color": "#374151",
+			"textAlign": "start",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 174.8,
+			"parent": "e35"
+		},
+		{
+			"id": "e52",
+			"name": "Starter check 4",
+			"tag": "svg",
+			"box": {
+				"x": 153,
+				"y": 753,
+				"w": 20,
+				"h": 20
+			},
+			"kind": "asset",
+			"svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\"><circle cx=\"10\" cy=\"10\" r=\"10\" fill=\"#EEF2FF\"/><path d=\"M6 10.4l2.6 2.6L14 7.6\" stroke=\"#4F46E5\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>",
+			"parent": "e35"
+		},
+		{
+			"id": "e55",
+			"name": "Starter feature 4",
+			"tag": "span",
+			"box": {
+				"x": 185,
+				"y": 751,
+				"w": 93.92,
+				"h": 24
+			},
+			"kind": "text",
+			"text": "7-day history",
+			"renderedText": "7-day history",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 400,
+				"italic": false,
+				"size": 15,
+				"lineHeight": 24,
+				"letterSpacing": 0
+			},
+			"color": "#374151",
+			"textAlign": "start",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 93.92,
+			"parent": "e35"
+		},
+		{
+			"id": "e57",
+			"name": "Starter check 5",
+			"tag": "svg",
+			"box": {
+				"x": 153,
+				"y": 789,
+				"w": 20,
+				"h": 20
+			},
+			"kind": "asset",
+			"svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\"><circle cx=\"10\" cy=\"10\" r=\"10\" fill=\"#EEF2FF\"/><path d=\"M6 10.4l2.6 2.6L14 7.6\" stroke=\"#4F46E5\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>",
+			"parent": "e35"
+		},
+		{
+			"id": "e60",
+			"name": "Starter feature 5",
+			"tag": "span",
+			"box": {
+				"x": 185,
+				"y": 787,
+				"w": 140.39,
+				"h": 24
+			},
+			"kind": "text",
+			"text": "Community support",
+			"renderedText": "Community support",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 400,
+				"italic": false,
+				"size": 15,
+				"lineHeight": 24,
+				"letterSpacing": 0
+			},
+			"color": "#374151",
+			"textAlign": "start",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 140.39,
+			"parent": "e35"
+		},
+		{
+			"id": "e61",
+			"name": "Pro plan card",
+			"tag": "article",
+			"box": {
+				"x": 528,
+				"y": 349,
+				"w": 384,
+				"h": 495
+			},
+			"kind": "box",
+			"background": "#EEF2FF",
+			"radius": 16,
+			"border": {
+				"top": {
+					"width": 2,
+					"color": "#4F46E5"
+				},
+				"right": {
+					"width": 2,
+					"color": "#4F46E5"
+				},
+				"bottom": {
+					"width": 2,
+					"color": "#4F46E5"
+				},
+				"left": {
+					"width": 2,
+					"color": "#4F46E5"
+				}
+			},
+			"clips": false,
+			"parent": "e26"
+		},
+		{
+			"id": "e62",
+			"name": "Most popular badge",
+			"tag": "div",
+			"box": {
+				"x": 669.67,
+				"y": 338,
+				"w": 100.66,
+				"h": 26
+			},
+			"kind": "box",
+			"background": "#4F46E5",
+			"radius": 13,
+			"clips": false,
+			"parent": "e61"
+		},
+		{
+			"id": "e63",
+			"name": "Most popular label",
+			"tag": "span",
+			"box": {
+				"x": 681.67,
+				"y": 343,
+				"w": 76.66,
+				"h": 16
+			},
+			"kind": "text",
+			"text": "Most popular",
+			"renderedText": "Most popular",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 600,
+				"italic": false,
+				"size": 12,
+				"lineHeight": 16,
+				"letterSpacing": 0
+			},
+			"color": "#FFFFFF",
+			"textAlign": "start",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 76.66,
+			"parent": "e62"
+		},
+		{
+			"id": "e64",
+			"name": "Pro plan name",
+			"tag": "h3",
+			"box": {
+				"x": 561,
+				"y": 382,
+				"w": 318,
+				"h": 28
+			},
+			"kind": "text",
+			"text": "Pro",
+			"renderedText": "Pro",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 600,
+				"italic": false,
+				"size": 20,
+				"lineHeight": 28,
+				"letterSpacing": 0
+			},
+			"color": "#101828",
+			"textAlign": "start",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 32.58,
+			"parent": "e61"
+		},
+		{
+			"id": "e65",
+			"name": "Pro plan description",
+			"tag": "p",
+			"box": {
+				"x": 561,
+				"y": 418,
+				"w": 318,
+				"h": 24
+			},
+			"kind": "text",
+			"text": "Best for growing teams",
+			"renderedText": "Best for growing teams",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 400,
+				"italic": false,
+				"size": 15,
+				"lineHeight": 24,
+				"letterSpacing": 0
+			},
+			"color": "#4B5563",
+			"textAlign": "start",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 164.22,
+			"parent": "e61"
+		},
+		{
+			"id": "e66",
+			"name": "Pro plan price",
+			"tag": "p",
+			"box": {
+				"x": 561,
+				"y": 466,
+				"w": 318,
+				"h": 56
+			},
+			"kind": "text",
+			"text": "$29/month",
+			"renderedText": "$29/month",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 700,
+				"italic": false,
+				"size": 48,
+				"lineHeight": 56,
+				"letterSpacing": -1
+			},
+			"color": "#101828",
+			"textAlign": "start",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 144.34,
+			"runs": [
+				{
+					"start": 0,
+					"end": 3,
+					"family": "Inter",
+					"weight": 700,
+					"italic": false,
+					"size": 48,
+					"lineHeight": 56,
+					"letterSpacing": -1,
+					"color": "#101828",
+					"underline": false
+				},
+				{
+					"start": 3,
+					"end": 9,
+					"family": "Inter",
+					"weight": 500,
+					"italic": false,
+					"size": 16,
+					"lineHeight": 24,
+					"letterSpacing": 0,
+					"color": "#6B7280",
+					"underline": false
+				}
+			],
+			"parent": "e61"
+		},
+		{
+			"id": "e69",
+			"name": "Pro plan button",
+			"tag": "a",
+			"box": {
+				"x": 561,
+				"y": 546,
+				"w": 318,
+				"h": 44
+			},
+			"kind": "box",
+			"background": "#4F46E5",
+			"radius": 8,
+			"clips": false,
+			"parent": "e61"
+		},
+		{
+			"id": "e70",
+			"name": "Pro plan button label",
+			"tag": "span",
+			"box": {
+				"x": 670.08,
+				"y": 556,
+				"w": 99.83,
+				"h": 24
+			},
+			"kind": "text",
+			"text": "Start free trial",
+			"renderedText": "Start free trial",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 600,
+				"italic": false,
+				"size": 15,
+				"lineHeight": 24,
+				"letterSpacing": 0
+			},
+			"color": "#FFFFFF",
+			"textAlign": "start",
+			"alignHint": "center",
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 99.83,
+			"parent": "e69"
+		},
+		{
+			"id": "e71",
+			"name": "Pro plan features",
+			"tag": "ul",
+			"box": {
+				"x": 561,
+				"y": 618,
+				"w": 318,
+				"h": 193
+			},
+			"kind": "box",
+			"radius": 0,
+			"border": {
+				"top": {
+					"width": 1,
+					"color": "#C7D2FE"
+				}
+			},
+			"clips": false,
+			"parent": "e61"
+		},
+		{
+			"id": "e73",
+			"name": "Pro check 1",
+			"tag": "svg",
+			"box": {
+				"x": 561,
+				"y": 645,
+				"w": 20,
+				"h": 20
+			},
+			"kind": "asset",
+			"svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\"><circle cx=\"10\" cy=\"10\" r=\"10\" fill=\"#EEF2FF\"/><path d=\"M6 10.4l2.6 2.6L14 7.6\" stroke=\"#4F46E5\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>",
+			"parent": "e71"
+		},
+		{
+			"id": "e76",
+			"name": "Pro feature 1",
+			"tag": "span",
+			"box": {
+				"x": 593,
+				"y": 643,
+				"w": 128.19,
+				"h": 24
+			},
+			"kind": "text",
+			"text": "Unlimited projects",
+			"renderedText": "Unlimited projects",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 400,
+				"italic": false,
+				"size": 15,
+				"lineHeight": 24,
+				"letterSpacing": 0
+			},
+			"color": "#374151",
+			"textAlign": "start",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 128.19,
+			"parent": "e71"
+		},
+		{
+			"id": "e78",
+			"name": "Pro check 2",
+			"tag": "svg",
+			"box": {
+				"x": 561,
+				"y": 681,
+				"w": 20,
+				"h": 20
+			},
+			"kind": "asset",
+			"svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\"><circle cx=\"10\" cy=\"10\" r=\"10\" fill=\"#EEF2FF\"/><path d=\"M6 10.4l2.6 2.6L14 7.6\" stroke=\"#4F46E5\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>",
+			"parent": "e71"
+		},
+		{
+			"id": "e81",
+			"name": "Pro feature 2",
+			"tag": "span",
+			"box": {
+				"x": 593,
+				"y": 679,
+				"w": 140.67,
+				"h": 24
+			},
+			"kind": "text",
+			"text": "Approval workflows",
+			"renderedText": "Approval workflows",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 400,
+				"italic": false,
+				"size": 15,
+				"lineHeight": 24,
+				"letterSpacing": 0
+			},
+			"color": "#374151",
+			"textAlign": "start",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 140.67,
+			"parent": "e71"
+		},
+		{
+			"id": "e83",
+			"name": "Pro check 3",
+			"tag": "svg",
+			"box": {
+				"x": 561,
+				"y": 717,
+				"w": 20,
+				"h": 20
+			},
+			"kind": "asset",
+			"svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\"><circle cx=\"10\" cy=\"10\" r=\"10\" fill=\"#EEF2FF\"/><path d=\"M6 10.4l2.6 2.6L14 7.6\" stroke=\"#4F46E5\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>",
+			"parent": "e71"
+		},
+		{
+			"id": "e86",
+			"name": "Pro feature 3",
+			"tag": "span",
+			"box": {
+				"x": 593,
+				"y": 715,
+				"w": 220.89,
+				"h": 24
+			},
+			"kind": "text",
+			"text": "Design file and staging reviews",
+			"renderedText": "Design file and staging reviews",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 400,
+				"italic": false,
+				"size": 15,
+				"lineHeight": 24,
+				"letterSpacing": 0
+			},
+			"color": "#374151",
+			"textAlign": "start",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 220.89,
+			"parent": "e71"
+		},
+		{
+			"id": "e88",
+			"name": "Pro check 4",
+			"tag": "svg",
+			"box": {
+				"x": 561,
+				"y": 753,
+				"w": 20,
+				"h": 20
+			},
+			"kind": "asset",
+			"svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\"><circle cx=\"10\" cy=\"10\" r=\"10\" fill=\"#EEF2FF\"/><path d=\"M6 10.4l2.6 2.6L14 7.6\" stroke=\"#4F46E5\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>",
+			"parent": "e71"
+		},
+		{
+			"id": "e91",
+			"name": "Pro feature 4",
+			"tag": "span",
+			"box": {
+				"x": 593,
+				"y": 751,
+				"w": 96.81,
+				"h": 24
+			},
+			"kind": "text",
+			"text": "1-year history",
+			"renderedText": "1-year history",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 400,
+				"italic": false,
+				"size": 15,
+				"lineHeight": 24,
+				"letterSpacing": 0
+			},
+			"color": "#374151",
+			"textAlign": "start",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 96.81,
+			"parent": "e71"
+		},
+		{
+			"id": "e93",
+			"name": "Pro check 5",
+			"tag": "svg",
+			"box": {
+				"x": 561,
+				"y": 789,
+				"w": 20,
+				"h": 20
+			},
+			"kind": "asset",
+			"svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\"><circle cx=\"10\" cy=\"10\" r=\"10\" fill=\"#EEF2FF\"/><path d=\"M6 10.4l2.6 2.6L14 7.6\" stroke=\"#4F46E5\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>",
+			"parent": "e71"
+		},
+		{
+			"id": "e96",
+			"name": "Pro feature 5",
+			"tag": "span",
+			"box": {
+				"x": 593,
+				"y": 787,
+				"w": 110.22,
+				"h": 24
+			},
+			"kind": "text",
+			"text": "Priority support",
+			"renderedText": "Priority support",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 400,
+				"italic": false,
+				"size": 15,
+				"lineHeight": 24,
+				"letterSpacing": 0
+			},
+			"color": "#374151",
+			"textAlign": "start",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 110.22,
+			"parent": "e71"
+		},
+		{
+			"id": "e97",
+			"name": "Enterprise plan card",
+			"tag": "article",
+			"box": {
+				"x": 936,
+				"y": 349,
+				"w": 384,
+				"h": 495
+			},
+			"kind": "box",
+			"background": "#FFFFFF",
+			"radius": 16,
+			"border": {
+				"top": {
+					"width": 1,
+					"color": "#E5E7EB"
+				},
+				"right": {
+					"width": 1,
+					"color": "#E5E7EB"
+				},
+				"bottom": {
+					"width": 1,
+					"color": "#E5E7EB"
+				},
+				"left": {
+					"width": 1,
+					"color": "#E5E7EB"
+				}
+			},
+			"clips": false,
+			"parent": "e26"
+		},
+		{
+			"id": "e98",
+			"name": "Enterprise plan name",
+			"tag": "h3",
+			"box": {
+				"x": 969,
+				"y": 382,
+				"w": 318,
+				"h": 28
+			},
+			"kind": "text",
+			"text": "Enterprise",
+			"renderedText": "Enterprise",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 600,
+				"italic": false,
+				"size": 20,
+				"lineHeight": 28,
+				"letterSpacing": 0
+			},
+			"color": "#101828",
+			"textAlign": "start",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 99.78,
+			"parent": "e97"
+		},
+		{
+			"id": "e99",
+			"name": "Enterprise plan description",
+			"tag": "p",
+			"box": {
+				"x": 969,
+				"y": 418,
+				"w": 318,
+				"h": 24
+			},
+			"kind": "text",
+			"text": "Advanced controls for large organizations",
+			"renderedText": "Advanced controls for large organizations",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 400,
+				"italic": false,
+				"size": 15,
+				"lineHeight": 24,
+				"letterSpacing": 0
+			},
+			"color": "#4B5563",
+			"textAlign": "start",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 296.59,
+			"parent": "e97"
+		},
+		{
+			"id": "e100",
+			"name": "Enterprise plan price",
+			"tag": "p",
+			"box": {
+				"x": 969,
+				"y": 466,
+				"w": 318,
+				"h": 56
+			},
+			"kind": "text",
+			"text": "$79/month",
+			"renderedText": "$79/month",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 700,
+				"italic": false,
+				"size": 48,
+				"lineHeight": 56,
+				"letterSpacing": -1
+			},
+			"color": "#101828",
+			"textAlign": "start",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 141.56,
+			"runs": [
+				{
+					"start": 0,
+					"end": 3,
+					"family": "Inter",
+					"weight": 700,
+					"italic": false,
+					"size": 48,
+					"lineHeight": 56,
+					"letterSpacing": -1,
+					"color": "#101828",
+					"underline": false
+				},
+				{
+					"start": 3,
+					"end": 9,
+					"family": "Inter",
+					"weight": 500,
+					"italic": false,
+					"size": 16,
+					"lineHeight": 24,
+					"letterSpacing": 0,
+					"color": "#6B7280",
+					"underline": false
+				}
+			],
+			"parent": "e97"
+		},
+		{
+			"id": "e103",
+			"name": "Enterprise plan button",
+			"tag": "a",
+			"box": {
+				"x": 969,
+				"y": 546,
+				"w": 318,
+				"h": 44
+			},
+			"kind": "box",
+			"background": "#FFFFFF",
+			"radius": 8,
+			"border": {
+				"top": {
+					"width": 1,
+					"color": "#D1D5DB"
+				},
+				"right": {
+					"width": 1,
+					"color": "#D1D5DB"
+				},
+				"bottom": {
+					"width": 1,
+					"color": "#D1D5DB"
+				},
+				"left": {
+					"width": 1,
+					"color": "#D1D5DB"
+				}
+			},
+			"clips": false,
+			"parent": "e97"
+		},
+		{
+			"id": "e104",
+			"name": "Enterprise plan button label",
+			"tag": "span",
+			"box": {
+				"x": 1078.47,
+				"y": 556,
+				"w": 99.06,
+				"h": 24
+			},
+			"kind": "text",
+			"text": "Contact sales",
+			"renderedText": "Contact sales",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 600,
+				"italic": false,
+				"size": 15,
+				"lineHeight": 24,
+				"letterSpacing": 0
+			},
+			"color": "#101828",
+			"textAlign": "start",
+			"alignHint": "center",
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 99.06,
+			"parent": "e103"
+		},
+		{
+			"id": "e105",
+			"name": "Enterprise plan features",
+			"tag": "ul",
+			"box": {
+				"x": 969,
+				"y": 618,
+				"w": 318,
+				"h": 193
+			},
+			"kind": "box",
+			"radius": 0,
+			"border": {
+				"top": {
+					"width": 1,
+					"color": "#E5E7EB"
+				}
+			},
+			"clips": false,
+			"parent": "e97"
+		},
+		{
+			"id": "e107",
+			"name": "Enterprise check 1",
+			"tag": "svg",
+			"box": {
+				"x": 969,
+				"y": 645,
+				"w": 20,
+				"h": 20
+			},
+			"kind": "asset",
+			"svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\"><circle cx=\"10\" cy=\"10\" r=\"10\" fill=\"#EEF2FF\"/><path d=\"M6 10.4l2.6 2.6L14 7.6\" stroke=\"#4F46E5\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>",
+			"parent": "e105"
+		},
+		{
+			"id": "e110",
+			"name": "Enterprise feature 1",
+			"tag": "span",
+			"box": {
+				"x": 1001,
+				"y": 643,
+				"w": 120.81,
+				"h": 24
+			},
+			"kind": "text",
+			"text": "Everything in Pro",
+			"renderedText": "Everything in Pro",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 400,
+				"italic": false,
+				"size": 15,
+				"lineHeight": 24,
+				"letterSpacing": 0
+			},
+			"color": "#374151",
+			"textAlign": "start",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 120.81,
+			"parent": "e105"
+		},
+		{
+			"id": "e112",
+			"name": "Enterprise check 2",
+			"tag": "svg",
+			"box": {
+				"x": 969,
+				"y": 681,
+				"w": 20,
+				"h": 20
+			},
+			"kind": "asset",
+			"svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\"><circle cx=\"10\" cy=\"10\" r=\"10\" fill=\"#EEF2FF\"/><path d=\"M6 10.4l2.6 2.6L14 7.6\" stroke=\"#4F46E5\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>",
+			"parent": "e105"
+		},
+		{
+			"id": "e115",
+			"name": "Enterprise feature 2",
+			"tag": "span",
+			"box": {
+				"x": 1001,
+				"y": 679,
+				"w": 103.8,
+				"h": 24
+			},
+			"kind": "text",
+			"text": "SSO and SCIM",
+			"renderedText": "SSO and SCIM",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 400,
+				"italic": false,
+				"size": 15,
+				"lineHeight": 24,
+				"letterSpacing": 0
+			},
+			"color": "#374151",
+			"textAlign": "start",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 103.8,
+			"parent": "e105"
+		},
+		{
+			"id": "e117",
+			"name": "Enterprise check 3",
+			"tag": "svg",
+			"box": {
+				"x": 969,
+				"y": 717,
+				"w": 20,
+				"h": 20
+			},
+			"kind": "asset",
+			"svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\"><circle cx=\"10\" cy=\"10\" r=\"10\" fill=\"#EEF2FF\"/><path d=\"M6 10.4l2.6 2.6L14 7.6\" stroke=\"#4F46E5\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>",
+			"parent": "e105"
+		},
+		{
+			"id": "e120",
+			"name": "Enterprise feature 3",
+			"tag": "span",
+			"box": {
+				"x": 1001,
+				"y": 715,
+				"w": 112.78,
+				"h": 24
+			},
+			"kind": "text",
+			"text": "Audit log export",
+			"renderedText": "Audit log export",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 400,
+				"italic": false,
+				"size": 15,
+				"lineHeight": 24,
+				"letterSpacing": 0
+			},
+			"color": "#374151",
+			"textAlign": "start",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 112.78,
+			"parent": "e105"
+		},
+		{
+			"id": "e122",
+			"name": "Enterprise check 4",
+			"tag": "svg",
+			"box": {
+				"x": 969,
+				"y": 753,
+				"w": 20,
+				"h": 20
+			},
+			"kind": "asset",
+			"svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\"><circle cx=\"10\" cy=\"10\" r=\"10\" fill=\"#EEF2FF\"/><path d=\"M6 10.4l2.6 2.6L14 7.6\" stroke=\"#4F46E5\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>",
+			"parent": "e105"
+		},
+		{
+			"id": "e125",
+			"name": "Enterprise feature 4",
+			"tag": "span",
+			"box": {
+				"x": 1001,
+				"y": 751,
+				"w": 119.47,
+				"h": 24
+			},
+			"kind": "text",
+			"text": "Unlimited history",
+			"renderedText": "Unlimited history",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 400,
+				"italic": false,
+				"size": 15,
+				"lineHeight": 24,
+				"letterSpacing": 0
+			},
+			"color": "#374151",
+			"textAlign": "start",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 119.47,
+			"parent": "e105"
+		},
+		{
+			"id": "e127",
+			"name": "Enterprise check 5",
+			"tag": "svg",
+			"box": {
+				"x": 969,
+				"y": 789,
+				"w": 20,
+				"h": 20
+			},
+			"kind": "asset",
+			"svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\"><circle cx=\"10\" cy=\"10\" r=\"10\" fill=\"#EEF2FF\"/><path d=\"M6 10.4l2.6 2.6L14 7.6\" stroke=\"#4F46E5\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>",
+			"parent": "e105"
+		},
+		{
+			"id": "e130",
+			"name": "Enterprise feature 5",
+			"tag": "span",
+			"box": {
+				"x": 1001,
+				"y": 787,
+				"w": 201.61,
+				"h": 24
+			},
+			"kind": "text",
+			"text": "Dedicated success manager",
+			"renderedText": "Dedicated success manager",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 400,
+				"italic": false,
+				"size": 15,
+				"lineHeight": 24,
+				"letterSpacing": 0
+			},
+			"color": "#374151",
+			"textAlign": "start",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 201.61,
+			"parent": "e105"
+		},
+		{
+			"id": "e131",
+			"name": "FAQ section",
+			"tag": "section",
+			"box": {
+				"x": 0,
+				"y": 940,
+				"w": 1440,
+				"h": 668
+			},
+			"kind": "box",
+			"background": "#F9FAFB",
+			"radius": 0,
+			"clips": false,
+			"parent": "root"
+		},
+		{
+			"id": "e133",
+			"name": "FAQ title",
+			"tag": "h2",
+			"box": {
+				"x": 120,
+				"y": 1036,
+				"w": 1200,
+				"h": 40
+			},
+			"kind": "text",
+			"text": "Frequently asked questions",
+			"renderedText": "Frequently asked questions",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 700,
+				"italic": false,
+				"size": 32,
+				"lineHeight": 40,
+				"letterSpacing": -0.6
+			},
+			"color": "#101828",
+			"textAlign": "center",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 416.7,
+			"parent": "e131"
+		},
+		{
+			"id": "e134",
+			"name": "FAQ list",
+			"tag": "div",
+			"box": {
+				"x": 360,
+				"y": 1124,
+				"w": 720,
+				"h": 388
+			},
+			"kind": "container",
+			"direction": "vertical",
+			"gap": 16,
+			"alignItems": "normal",
+			"justifyContent": "normal",
+			"parent": "e131",
+			"children": [
+				"e135",
+				"e138",
+				"e142"
+			],
+			"measuredGaps": [
+				16,
+				16
+			]
+		},
+		{
+			"id": "e135",
+			"name": "FAQ item 1",
+			"tag": "div",
+			"box": {
+				"x": 360,
+				"y": 1124,
+				"w": 720,
+				"h": 136
+			},
+			"kind": "box",
+			"background": "#FFFFFF",
+			"radius": 12,
+			"border": {
+				"top": {
+					"width": 1,
+					"color": "#E5E7EB"
+				},
+				"right": {
+					"width": 1,
+					"color": "#E5E7EB"
+				},
+				"bottom": {
+					"width": 1,
+					"color": "#E5E7EB"
+				},
+				"left": {
+					"width": 1,
+					"color": "#E5E7EB"
+				}
+			},
+			"clips": false,
+			"parent": "e134"
+		},
+		{
+			"id": "e136",
+			"name": "FAQ question 1",
+			"tag": "h3",
+			"box": {
+				"x": 389,
+				"y": 1149,
+				"w": 662,
+				"h": 26
+			},
+			"kind": "text",
+			"text": "Can I change plans later?",
+			"renderedText": "Can I change plans later?",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 600,
+				"italic": false,
+				"size": 17,
+				"lineHeight": 26,
+				"letterSpacing": 0
+			},
+			"color": "#101828",
+			"textAlign": "start",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 206.33,
+			"parent": "e135"
+		},
+		{
+			"id": "e137",
+			"name": "FAQ answer 1",
+			"tag": "p",
+			"box": {
+				"x": 389,
+				"y": 1183,
+				"w": 662,
+				"h": 52
+			},
+			"kind": "text",
+			"text": "Yes. Upgrade or downgrade at any time and we will prorate the difference on your next invoice.",
+			"renderedText": "Yes. Upgrade or downgrade at any time and we will prorate the difference on your next invoice.",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 400,
+				"italic": false,
+				"size": 16,
+				"lineHeight": 26,
+				"letterSpacing": 0
+			},
+			"color": "#4B5563",
+			"textAlign": "start",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 2,
+			"textWidth": 656.19,
+			"parent": "e135"
+		},
+		{
+			"id": "e138",
+			"name": "FAQ item 2",
+			"tag": "div",
+			"box": {
+				"x": 360,
+				"y": 1276,
+				"w": 720,
+				"h": 110
+			},
+			"kind": "box",
+			"background": "#FFFFFF",
+			"radius": 12,
+			"border": {
+				"top": {
+					"width": 1,
+					"color": "#E5E7EB"
+				},
+				"right": {
+					"width": 1,
+					"color": "#E5E7EB"
+				},
+				"bottom": {
+					"width": 1,
+					"color": "#E5E7EB"
+				},
+				"left": {
+					"width": 1,
+					"color": "#E5E7EB"
+				}
+			},
+			"clips": false,
+			"parent": "e134"
+		},
+		{
+			"id": "e139",
+			"name": "FAQ question 2",
+			"tag": "h3",
+			"box": {
+				"x": 389,
+				"y": 1301,
+				"w": 662,
+				"h": 26
+			},
+			"kind": "text",
+			"text": "Is there a free trial?",
+			"renderedText": "Is there a free trial?",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 600,
+				"italic": false,
+				"size": 17,
+				"lineHeight": 26,
+				"letterSpacing": 0
+			},
+			"color": "#101828",
+			"textAlign": "start",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 157.7,
+			"parent": "e138"
+		},
+		{
+			"id": "e140",
+			"name": "FAQ answer 2",
+			"tag": "p",
+			"box": {
+				"x": 389,
+				"y": 1335,
+				"w": 662,
+				"h": 26
+			},
+			"kind": "text",
+			"text": "Every paid plan starts with a 30-day trial. See our billing guide for details.",
+			"renderedText": "Every paid plan starts with a 30-day trial. See our billing guide for details.",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 400,
+				"italic": false,
+				"size": 16,
+				"lineHeight": 26,
+				"letterSpacing": 0
+			},
+			"color": "#4B5563",
+			"textAlign": "start",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 553.08,
+			"runs": [
+				{
+					"start": 0,
+					"end": 52,
+					"family": "Inter",
+					"weight": 400,
+					"italic": false,
+					"size": 16,
+					"lineHeight": 26,
+					"letterSpacing": 0,
+					"color": "#4B5563",
+					"underline": false
+				},
+				{
+					"start": 52,
+					"end": 65,
+					"family": "Inter",
+					"weight": 400,
+					"italic": false,
+					"size": 16,
+					"lineHeight": 26,
+					"letterSpacing": 0,
+					"color": "#4F46E5",
+					"underline": true
+				},
+				{
+					"start": 65,
+					"end": 78,
+					"family": "Inter",
+					"weight": 400,
+					"italic": false,
+					"size": 16,
+					"lineHeight": 26,
+					"letterSpacing": 0,
+					"color": "#4B5563",
+					"underline": false
+				}
+			],
+			"parent": "e138"
+		},
+		{
+			"id": "e142",
+			"name": "FAQ item 3",
+			"tag": "div",
+			"box": {
+				"x": 360,
+				"y": 1402,
+				"w": 720,
+				"h": 110
+			},
+			"kind": "box",
+			"background": "#FFFFFF",
+			"radius": 12,
+			"border": {
+				"top": {
+					"width": 1,
+					"color": "#E5E7EB"
+				},
+				"right": {
+					"width": 1,
+					"color": "#E5E7EB"
+				},
+				"bottom": {
+					"width": 1,
+					"color": "#E5E7EB"
+				},
+				"left": {
+					"width": 1,
+					"color": "#E5E7EB"
+				}
+			},
+			"clips": false,
+			"parent": "e134"
+		},
+		{
+			"id": "e143",
+			"name": "FAQ question 3",
+			"tag": "h3",
+			"box": {
+				"x": 389,
+				"y": 1427,
+				"w": 662,
+				"h": 26
+			},
+			"kind": "text",
+			"text": "Do you offer discounts for nonprofits?",
+			"renderedText": "Do you offer discounts for nonprofits?",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 600,
+				"italic": false,
+				"size": 17,
+				"lineHeight": 26,
+				"letterSpacing": 0
+			},
+			"color": "#101828",
+			"textAlign": "start",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 311.8,
+			"parent": "e142"
+		},
+		{
+			"id": "e144",
+			"name": "FAQ answer 3",
+			"tag": "p",
+			"box": {
+				"x": 389,
+				"y": 1461,
+				"w": 662,
+				"h": 26
+			},
+			"kind": "text",
+			"text": "Yes. Nonprofits and schools get 50% off any paid plan.",
+			"renderedText": "Yes. Nonprofits and schools get 50% off any paid plan.",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 400,
+				"italic": false,
+				"size": 16,
+				"lineHeight": 26,
+				"letterSpacing": 0
+			},
+			"color": "#4B5563",
+			"textAlign": "start",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 415.89,
+			"parent": "e142"
+		},
+		{
+			"id": "e145",
+			"name": "Footer",
+			"tag": "footer",
+			"box": {
+				"x": 0,
+				"y": 1608,
+				"w": 1440,
+				"h": 177
+			},
+			"kind": "box",
+			"radius": 0,
+			"border": {
+				"top": {
+					"width": 1,
+					"color": "#E5E7EB"
+				}
+			},
+			"clips": false,
+			"parent": "root"
+		},
+		{
+			"id": "e149",
+			"name": "Footer logo mark",
+			"tag": "svg",
+			"box": {
+				"x": 120,
+				"y": 1657,
+				"w": 28,
+				"h": 28
+			},
+			"kind": "asset",
+			"svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"28\" height=\"28\" viewBox=\"0 0 28 28\" fill=\"none\"><rect width=\"28\" height=\"28\" rx=\"8\" fill=\"#4F46E5\"/><circle cx=\"14\" cy=\"14\" r=\"6\" stroke=\"#FFFFFF\" stroke-width=\"2.5\"/><circle cx=\"21\" cy=\"7.5\" r=\"2.5\" fill=\"#A5B4FC\"/></svg>",
+			"parent": "e145"
+		},
+		{
+			"id": "e153",
+			"name": "Footer wordmark",
+			"tag": "span",
+			"box": {
+				"x": 158,
+				"y": 1657,
+				"w": 47.23,
+				"h": 28
+			},
+			"kind": "text",
+			"text": "Orbit",
+			"renderedText": "Orbit",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 700,
+				"italic": false,
+				"size": 20,
+				"lineHeight": 28,
+				"letterSpacing": -0.4
+			},
+			"color": "#101828",
+			"textAlign": "start",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 47.23,
+			"parent": "e145"
+		},
+		{
+			"id": "e154",
+			"name": "Footer links",
+			"tag": "nav",
+			"box": {
+				"x": 1014.31,
+				"y": 1661,
+				"w": 305.69,
+				"h": 20
+			},
+			"kind": "container",
+			"direction": "horizontal",
+			"gap": 28,
+			"alignItems": "normal",
+			"justifyContent": "normal",
+			"parent": "e145",
+			"children": [
+				"e155",
+				"e156",
+				"e157",
+				"e158"
+			],
+			"measuredGaps": [
+				28,
+				28,
+				28
+			]
+		},
+		{
+			"id": "e155",
+			"name": "Footer link Product",
+			"tag": "a",
+			"box": {
+				"x": 1014.31,
+				"y": 1661,
+				"w": 52.52,
+				"h": 20
+			},
+			"kind": "text",
+			"text": "Product",
+			"renderedText": "Product",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 500,
+				"italic": false,
+				"size": 14,
+				"lineHeight": 20,
+				"letterSpacing": 0
+			},
+			"color": "#4B5563",
+			"textAlign": "start",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 52.52,
+			"parent": "e154"
+		},
+		{
+			"id": "e156",
+			"name": "Footer link Pricing",
+			"tag": "a",
+			"box": {
+				"x": 1094.83,
+				"y": 1661,
+				"w": 46.73,
+				"h": 20
+			},
+			"kind": "text",
+			"text": "Pricing",
+			"renderedText": "Pricing",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 500,
+				"italic": false,
+				"size": 14,
+				"lineHeight": 20,
+				"letterSpacing": 0
+			},
+			"color": "#4B5563",
+			"textAlign": "start",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 46.73,
+			"parent": "e154"
+		},
+		{
+			"id": "e157",
+			"name": "Footer link Changelog",
+			"tag": "a",
+			"box": {
+				"x": 1169.56,
+				"y": 1661,
+				"w": 72.63,
+				"h": 20
+			},
+			"kind": "text",
+			"text": "Changelog",
+			"renderedText": "Changelog",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 500,
+				"italic": false,
+				"size": 14,
+				"lineHeight": 20,
+				"letterSpacing": 0
+			},
+			"color": "#4B5563",
+			"textAlign": "start",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 72.63,
+			"parent": "e154"
+		},
+		{
+			"id": "e158",
+			"name": "Footer link Privacy",
+			"tag": "a",
+			"box": {
+				"x": 1270.19,
+				"y": 1661,
+				"w": 49.81,
+				"h": 20
+			},
+			"kind": "text",
+			"text": "Privacy",
+			"renderedText": "Privacy",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 500,
+				"italic": false,
+				"size": 14,
+				"lineHeight": 20,
+				"letterSpacing": 0
+			},
+			"color": "#4B5563",
+			"textAlign": "start",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 49.81,
+			"parent": "e154"
+		},
+		{
+			"id": "e160",
+			"name": "Copyright",
+			"tag": "p",
+			"box": {
+				"x": 120,
+				"y": 1717,
+				"w": 284.06,
+				"h": 20
+			},
+			"kind": "text",
+			"text": "© 2026 Orbit Labs, Inc. All rights reserved.",
+			"renderedText": "© 2026 Orbit Labs, Inc. All rights reserved.",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 400,
+				"italic": false,
+				"size": 14,
+				"lineHeight": 20,
+				"letterSpacing": 0
+			},
+			"color": "#6B7280",
+			"textAlign": "start",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 284.06,
+			"parent": "e145"
+		},
+		{
+			"id": "e162",
+			"name": "Status dot",
+			"tag": "span",
+			"box": {
+				"x": 1137.53,
+				"y": 1723,
+				"w": 8,
+				"h": 8
+			},
+			"kind": "box",
+			"background": "#10B981",
+			"radius": 4,
+			"clips": false,
+			"parent": "e145"
+		},
+		{
+			"id": "e163",
+			"name": "Status text",
+			"tag": "span",
+			"box": {
+				"x": 1153.53,
+				"y": 1717,
+				"w": 166.47,
+				"h": 20
+			},
+			"kind": "text",
+			"text": "Status updated 10:42 AM",
+			"renderedText": "Status updated 10:42 AM",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 400,
+				"italic": false,
+				"size": 14,
+				"lineHeight": 20,
+				"letterSpacing": 0
+			},
+			"color": "#6B7280",
+			"textAlign": "start",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 166.47,
+			"parent": "e145"
+		}
+	],
+	"warnings": []
+}

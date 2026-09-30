@@ -1,0 +1,1612 @@
+{
+	"page": "home",
+	"frame": "Home",
+	"path": "/clean",
+	"buggyPath": "/",
+	"viewport": {
+		"width": 1440,
+		"height": 900,
+		"mobile": false
+	},
+	"document": {
+		"width": 1440,
+		"height": 2180
+	},
+	"fonts": [
+		{
+			"family": "Inter",
+			"weight": 700,
+			"italic": false
+		},
+		{
+			"family": "Inter",
+			"weight": 500,
+			"italic": false
+		},
+		{
+			"family": "Inter",
+			"weight": 600,
+			"italic": false
+		},
+		{
+			"family": "Inter",
+			"weight": 400,
+			"italic": false
+		},
+		{
+			"family": "Playfair Display",
+			"weight": 400,
+			"italic": true
+		}
+	],
+	"elements": [
+		{
+			"id": "e2",
+			"name": "Nav bar",
+			"tag": "header",
+			"box": {
+				"x": 0,
+				"y": 0,
+				"w": 1440,
+				"h": 73
+			},
+			"kind": "box",
+			"background": "#FFFFFF",
+			"radius": 0,
+			"border": {
+				"bottom": {
+					"width": 1,
+					"color": "#E5E7EB"
+				}
+			},
+			"clips": false,
+			"parent": "root"
+		},
+		{
+			"id": "e5",
+			"name": "Logo mark",
+			"tag": "svg",
+			"box": {
+				"x": 120,
+				"y": 22,
+				"w": 28,
+				"h": 28
+			},
+			"kind": "asset",
+			"svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"28\" height=\"28\" viewBox=\"0 0 28 28\" fill=\"none\"><rect width=\"28\" height=\"28\" rx=\"8\" fill=\"#4F46E5\"/><circle cx=\"14\" cy=\"14\" r=\"6\" stroke=\"#FFFFFF\" stroke-width=\"2.5\"/><circle cx=\"21\" cy=\"7.5\" r=\"2.5\" fill=\"#A5B4FC\"/></svg>",
+			"parent": "e2"
+		},
+		{
+			"id": "e9",
+			"name": "Logo wordmark",
+			"tag": "span",
+			"box": {
+				"x": 158,
+				"y": 22,
+				"w": 47.23,
+				"h": 28
+			},
+			"kind": "text",
+			"text": "Orbit",
+			"renderedText": "Orbit",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 700,
+				"italic": false,
+				"size": 20,
+				"lineHeight": 28,
+				"letterSpacing": -0.4
+			},
+			"color": "#101828",
+			"textAlign": "start",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 47.23,
+			"parent": "e2"
+		},
+		{
+			"id": "e10",
+			"name": "Nav links",
+			"tag": "nav",
+			"box": {
+				"x": 261.23,
+				"y": 24,
+				"w": 347.09,
+				"h": 24
+			},
+			"kind": "container",
+			"direction": "horizontal",
+			"gap": 32,
+			"alignItems": "normal",
+			"justifyContent": "normal",
+			"parent": "e2",
+			"children": [
+				"e11",
+				"e12",
+				"e13",
+				"e14"
+			],
+			"measuredGaps": [
+				32,
+				32,
+				32
+			]
+		},
+		{
+			"id": "e11",
+			"name": "Nav link Product",
+			"tag": "a",
+			"box": {
+				"x": 261.23,
+				"y": 24,
+				"w": 56.27,
+				"h": 24
+			},
+			"kind": "text",
+			"text": "Product",
+			"renderedText": "Product",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 500,
+				"italic": false,
+				"size": 15,
+				"lineHeight": 24,
+				"letterSpacing": 0
+			},
+			"color": "#4B5563",
+			"textAlign": "start",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 56.27,
+			"parent": "e10"
+		},
+		{
+			"id": "e12",
+			"name": "Nav link Solutions",
+			"tag": "a",
+			"box": {
+				"x": 349.5,
+				"y": 24,
+				"w": 66.61,
+				"h": 24
+			},
+			"kind": "text",
+			"text": "Solutions",
+			"renderedText": "Solutions",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 500,
+				"italic": false,
+				"size": 15,
+				"lineHeight": 24,
+				"letterSpacing": 0
+			},
+			"color": "#4B5563",
+			"textAlign": "start",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 66.61,
+			"parent": "e10"
+		},
+		{
+			"id": "e13",
+			"name": "Nav link Pricing",
+			"tag": "a",
+			"box": {
+				"x": 448.11,
+				"y": 24,
+				"w": 50.08,
+				"h": 24
+			},
+			"kind": "text",
+			"text": "Pricing",
+			"renderedText": "Pricing",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 500,
+				"italic": false,
+				"size": 15,
+				"lineHeight": 24,
+				"letterSpacing": 0
+			},
+			"color": "#4B5563",
+			"textAlign": "start",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 50.08,
+			"parent": "e10"
+		},
+		{
+			"id": "e14",
+			"name": "Nav link Customers",
+			"tag": "a",
+			"box": {
+				"x": 530.19,
+				"y": 24,
+				"w": 78.14,
+				"h": 24
+			},
+			"kind": "text",
+			"text": "Customers",
+			"renderedText": "Customers",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 500,
+				"italic": false,
+				"size": 15,
+				"lineHeight": 24,
+				"letterSpacing": 0
+			},
+			"color": "#4B5563",
+			"textAlign": "start",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 78.14,
+			"parent": "e10"
+		},
+		{
+			"id": "e17",
+			"name": "Sign in label",
+			"tag": "span",
+			"box": {
+				"x": 1139.77,
+				"y": 26,
+				"w": 52.61,
+				"h": 20
+			},
+			"kind": "text",
+			"text": "Sign in",
+			"renderedText": "SIGN IN",
+			"textTransform": "uppercase",
+			"font": {
+				"family": "Inter",
+				"weight": 600,
+				"italic": false,
+				"size": 13,
+				"lineHeight": 20,
+				"letterSpacing": 0.6
+			},
+			"color": "#374151",
+			"textAlign": "start",
+			"alignHint": "center",
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 52.61,
+			"parent": "e2"
+		},
+		{
+			"id": "e18",
+			"name": "Get started button",
+			"tag": "a",
+			"box": {
+				"x": 1212.38,
+				"y": 16,
+				"w": 107.63,
+				"h": 40
+			},
+			"kind": "box",
+			"background": "#4F46E5",
+			"radius": 8,
+			"clips": false,
+			"parent": "e2"
+		},
+		{
+			"id": "e19",
+			"name": "Get started label",
+			"tag": "span",
+			"box": {
+				"x": 1228.38,
+				"y": 26,
+				"w": 75.63,
+				"h": 20
+			},
+			"kind": "text",
+			"text": "Get started",
+			"renderedText": "Get started",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 600,
+				"italic": false,
+				"size": 14,
+				"lineHeight": 20,
+				"letterSpacing": 0
+			},
+			"color": "#FFFFFF",
+			"textAlign": "start",
+			"alignHint": "center",
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 75.63,
+			"parent": "e18"
+		},
+		{
+			"id": "e24",
+			"name": "Hero title",
+			"tag": "h1",
+			"box": {
+				"x": 120,
+				"y": 145,
+				"w": 600,
+				"h": 128
+			},
+			"kind": "text",
+			"text": "Design reviews without the wait",
+			"renderedText": "Design reviews without the wait",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 700,
+				"italic": false,
+				"size": 56,
+				"lineHeight": 64,
+				"letterSpacing": -1.2
+			},
+			"color": "#101828",
+			"textAlign": "start",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 2,
+			"textWidth": 419.91,
+			"parent": "root"
+		},
+		{
+			"id": "e25",
+			"name": "Hero subtitle",
+			"tag": "p",
+			"box": {
+				"x": 120,
+				"y": 297,
+				"w": 600,
+				"h": 32
+			},
+			"kind": "text",
+			"text": "Start your 30-day free trial and ship reviews faster.",
+			"renderedText": "Start your 30-day free trial and ship reviews faster.",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 400,
+				"italic": false,
+				"size": 20,
+				"lineHeight": 32,
+				"letterSpacing": 0
+			},
+			"color": "#4B5563",
+			"textAlign": "start",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 480.45,
+			"parent": "root"
+		},
+		{
+			"id": "e26",
+			"name": "Hero CTA row",
+			"tag": "div",
+			"box": {
+				"x": 120,
+				"y": 369,
+				"w": 600,
+				"h": 48
+			},
+			"kind": "container",
+			"direction": "horizontal",
+			"gap": 12,
+			"alignItems": "normal",
+			"justifyContent": "normal",
+			"parent": "root",
+			"children": [
+				"e27",
+				"e29"
+			],
+			"measuredGaps": [
+				12
+			]
+		},
+		{
+			"id": "e27",
+			"name": "Start free trial button",
+			"tag": "a",
+			"box": {
+				"x": 120,
+				"y": 369,
+				"w": 150.48,
+				"h": 48
+			},
+			"kind": "box",
+			"background": "#4F46E5",
+			"radius": 8,
+			"clips": false,
+			"parent": "e26"
+		},
+		{
+			"id": "e28",
+			"name": "Start free trial label",
+			"tag": "span",
+			"box": {
+				"x": 142,
+				"y": 381,
+				"w": 106.48,
+				"h": 24
+			},
+			"kind": "text",
+			"text": "Start free trial",
+			"renderedText": "Start free trial",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 600,
+				"italic": false,
+				"size": 16,
+				"lineHeight": 24,
+				"letterSpacing": 0
+			},
+			"color": "#FFFFFF",
+			"textAlign": "start",
+			"alignHint": "center",
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 106.48,
+			"parent": "e27"
+		},
+		{
+			"id": "e29",
+			"name": "Book a demo button",
+			"tag": "a",
+			"box": {
+				"x": 282.48,
+				"y": 369,
+				"w": 145.98,
+				"h": 48
+			},
+			"kind": "box",
+			"background": "#FFFFFF",
+			"radius": 8,
+			"border": {
+				"top": {
+					"width": 1,
+					"color": "#D1D5DB"
+				},
+				"right": {
+					"width": 1,
+					"color": "#D1D5DB"
+				},
+				"bottom": {
+					"width": 1,
+					"color": "#D1D5DB"
+				},
+				"left": {
+					"width": 1,
+					"color": "#D1D5DB"
+				}
+			},
+			"clips": false,
+			"parent": "e26"
+		},
+		{
+			"id": "e30",
+			"name": "Book a demo label",
+			"tag": "span",
+			"box": {
+				"x": 305.48,
+				"y": 381,
+				"w": 99.98,
+				"h": 24
+			},
+			"kind": "text",
+			"text": "Book a demo",
+			"renderedText": "Book a demo",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 600,
+				"italic": false,
+				"size": 16,
+				"lineHeight": 24,
+				"letterSpacing": 0
+			},
+			"color": "#101828",
+			"textAlign": "start",
+			"alignHint": "center",
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 99.98,
+			"parent": "e29"
+		},
+		{
+			"id": "e31",
+			"name": "Trust line",
+			"tag": "p",
+			"box": {
+				"x": 120,
+				"y": 437,
+				"w": 600,
+				"h": 20
+			},
+			"kind": "text",
+			"text": "No credit card required.",
+			"renderedText": "No credit card required.",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 400,
+				"italic": false,
+				"size": 14,
+				"lineHeight": 20,
+				"letterSpacing": 0
+			},
+			"color": "#6B7280",
+			"textAlign": "start",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 157.36,
+			"parent": "root"
+		},
+		{
+			"id": "e33",
+			"name": "Hero illustration",
+			"tag": "svg",
+			"box": {
+				"x": 840,
+				"y": 145,
+				"w": 480,
+				"h": 320
+			},
+			"kind": "asset",
+			"svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"480\" height=\"320\" viewBox=\"0 0 480 320\" fill=\"none\" preserveAspectRatio=\"none\"><rect width=\"480\" height=\"320\" rx=\"20\" fill=\"#EEF2FF\"/><rect x=\"28\" y=\"28\" width=\"424\" height=\"264\" rx=\"12\" fill=\"#FFFFFF\"/><rect x=\"28\" y=\"28\" width=\"424\" height=\"40\" rx=\"12\" fill=\"#F3F4F6\"/><rect x=\"28\" y=\"56\" width=\"424\" height=\"12\" fill=\"#F3F4F6\"/><circle cx=\"50\" cy=\"48\" r=\"5\" fill=\"#F87171\"/><circle cx=\"66\" cy=\"48\" r=\"5\" fill=\"#FBBF24\"/><circle cx=\"82\" cy=\"48\" r=\"5\" fill=\"#34D399\"/><rect x=\"148\" y=\"41\" width=\"184\" height=\"14\" rx=\"7\" fill=\"#FFFFFF\"/><rect x=\"48\" y=\"88\" width=\"244\" height=\"184\" rx=\"10\" fill=\"#F9FAFB\"/><rect x=\"64\" y=\"104\" width=\"120\" height=\"12\" rx=\"6\" fill=\"#C7D2FE\"/><rect x=\"64\" y=\"126\" width=\"196\" height=\"8\" rx=\"4\" fill=\"#E5E7EB\"/><rect x=\"64\" y=\"142\" width=\"164\" height=\"8\" rx=\"4\" fill=\"#E5E7EB\"/><rect x=\"64\" y=\"162\" width=\"212\" height=\"94\" rx=\"8\" fill=\"#E0E7FF\"/><rect x=\"80\" y=\"178\" width=\"72\" height=\"8\" rx=\"4\" fill=\"#C7D2FE\"/><rect x=\"80\" y=\"194\" width=\"120\" height=\"6\" rx=\"3\" fill=\"#FFFFFF\"/><circle cx=\"258\" cy=\"112\" r=\"12\" fill=\"#4F46E5\"/><circle cx=\"258\" cy=\"112\" r=\"4\" fill=\"#FFFFFF\"/><circle cx=\"236\" cy=\"226\" r=\"12\" fill=\"#F59E0B\"/><circle cx=\"236\" cy=\"226\" r=\"4\" fill=\"#FFFFFF\"/><rect x=\"308\" y=\"88\" width=\"124\" height=\"184\" rx=\"10\" fill=\"#F9FAFB\"/><rect x=\"318\" y=\"100\" width=\"104\" height=\"48\" rx=\"8\" fill=\"#FFFFFF\"/><circle cx=\"332\" cy=\"114\" r=\"6\" fill=\"#4F46E5\"/><rect x=\"344\" y=\"110\" width=\"64\" height=\"8\" rx=\"4\" fill=\"#C7D2FE\"/><rect x=\"328\" y=\"130\" width=\"84\" height=\"6\" rx=\"3\" fill=\"#E5E7EB\"/><rect x=\"318\" y=\"156\" width=\"104\" height=\"48\" rx=\"8\" fill=\"#FFFFFF\"/><circle cx=\"332\" cy=\"170\" r=\"6\" fill=\"#F59E0B\"/><rect x=\"344\" y=\"166\" width=\"56\" height=\"8\" rx=\"4\" fill=\"#FDE68A\"/><rect x=\"328\" y=\"186\" width=\"76\" height=\"6\" rx=\"3\" fill=\"#E5E7EB\"/><rect x=\"318\" y=\"212\" width=\"104\" height=\"48\" rx=\"8\" fill=\"#FFFFFF\"/><circle cx=\"332\" cy=\"226\" r=\"6\" fill=\"#10B981\"/><rect x=\"344\" y=\"222\" width=\"60\" height=\"8\" rx=\"4\" fill=\"#A7F3D0\"/><rect x=\"328\" y=\"242\" width=\"80\" height=\"6\" rx=\"3\" fill=\"#E5E7EB\"/></svg>",
+			"parent": "root"
+		},
+		{
+			"id": "e66",
+			"name": "Features section",
+			"tag": "section",
+			"box": {
+				"x": 0,
+				"y": 553,
+				"w": 1440,
+				"h": 674
+			},
+			"kind": "box",
+			"background": "#F9FAFB",
+			"radius": 0,
+			"clips": false,
+			"parent": "root"
+		},
+		{
+			"id": "e69",
+			"name": "Features eyebrow",
+			"tag": "p",
+			"box": {
+				"x": 360,
+				"y": 649,
+				"w": 720,
+				"h": 20
+			},
+			"kind": "text",
+			"text": "Why teams switch",
+			"renderedText": "WHY TEAMS SWITCH",
+			"textTransform": "uppercase",
+			"font": {
+				"family": "Inter",
+				"weight": 600,
+				"italic": false,
+				"size": 14,
+				"lineHeight": 20,
+				"letterSpacing": 1
+			},
+			"color": "#4F46E5",
+			"textAlign": "center",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 164.52,
+			"parent": "e66"
+		},
+		{
+			"id": "e70",
+			"name": "Features title",
+			"tag": "h2",
+			"box": {
+				"x": 360,
+				"y": 681,
+				"w": 720,
+				"h": 96
+			},
+			"kind": "text",
+			"text": "Everything your team needs to review and ship",
+			"renderedText": "Everything your team needs to review and ship",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 700,
+				"italic": false,
+				"size": 40,
+				"lineHeight": 48,
+				"letterSpacing": -0.8
+			},
+			"color": "#101828",
+			"textAlign": "center",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 2,
+			"textWidth": 709.13,
+			"parent": "e66"
+		},
+		{
+			"id": "e71",
+			"name": "Features intro",
+			"tag": "p",
+			"box": {
+				"x": 360,
+				"y": 793,
+				"w": 720,
+				"h": 56
+			},
+			"kind": "text",
+			"text": "Orbit keeps feedback, approvals and release notes in one place, so nothing gets lost between design and code.",
+			"renderedText": "Orbit keeps feedback, approvals and release notes in one place, so nothing gets lost between design and code.",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 400,
+				"italic": false,
+				"size": 18,
+				"lineHeight": 28,
+				"letterSpacing": 0
+			},
+			"color": "#4B5563",
+			"textAlign": "center",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 2,
+			"textWidth": 717.7,
+			"parent": "e66"
+		},
+		{
+			"id": "e72",
+			"name": "Features row",
+			"tag": "div",
+			"box": {
+				"x": 120,
+				"y": 905,
+				"w": 1200,
+				"h": 226
+			},
+			"kind": "container",
+			"direction": "horizontal",
+			"gap": 24,
+			"alignItems": "stretch",
+			"justifyContent": "normal",
+			"parent": "e66",
+			"children": [
+				"e73",
+				"e80",
+				"e87"
+			],
+			"measuredGaps": [
+				24,
+				24
+			]
+		},
+		{
+			"id": "e73",
+			"name": "Feature card 1",
+			"tag": "article",
+			"box": {
+				"x": 120,
+				"y": 905,
+				"w": 384,
+				"h": 226
+			},
+			"kind": "box",
+			"background": "#FFFFFF",
+			"radius": 16,
+			"border": {
+				"top": {
+					"width": 1,
+					"color": "#E5E7EB"
+				},
+				"right": {
+					"width": 1,
+					"color": "#E5E7EB"
+				},
+				"bottom": {
+					"width": 1,
+					"color": "#E5E7EB"
+				},
+				"left": {
+					"width": 1,
+					"color": "#E5E7EB"
+				}
+			},
+			"clips": false,
+			"parent": "e72"
+		},
+		{
+			"id": "e74",
+			"name": "Feature 1 icon",
+			"tag": "svg",
+			"box": {
+				"x": 153,
+				"y": 938,
+				"w": 48,
+				"h": 48
+			},
+			"kind": "asset",
+			"svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"48\" height=\"48\" viewBox=\"0 0 48 48\" fill=\"none\"><rect width=\"48\" height=\"48\" rx=\"12\" fill=\"#EEF2FF\"/><path d=\"M15 18a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v7a4 4 0 0 1-4 4h-6l-5 4v-4a3 3 0 0 1-3-3z\" stroke=\"#4F46E5\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"24\" cy=\"21.5\" r=\"2\" fill=\"#4F46E5\"/></svg>",
+			"parent": "e73"
+		},
+		{
+			"id": "e78",
+			"name": "Feature 1 title",
+			"tag": "h3",
+			"box": {
+				"x": 153,
+				"y": 1010,
+				"w": 318,
+				"h": 28
+			},
+			"kind": "text",
+			"text": "Comment in context",
+			"renderedText": "Comment in context",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 600,
+				"italic": false,
+				"size": 20,
+				"lineHeight": 28,
+				"letterSpacing": 0
+			},
+			"color": "#101828",
+			"textAlign": "start",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 194.7,
+			"parent": "e73"
+		},
+		{
+			"id": "e79",
+			"name": "Feature 1 text",
+			"tag": "p",
+			"box": {
+				"x": 153,
+				"y": 1046,
+				"w": 318,
+				"h": 52
+			},
+			"kind": "text",
+			"text": "Pin feedback to live pages, design files and staging builds in one click.",
+			"renderedText": "Pin feedback to live pages, design files and staging builds in one click.",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 400,
+				"italic": false,
+				"size": 16,
+				"lineHeight": 26,
+				"letterSpacing": 0
+			},
+			"color": "#4B5563",
+			"textAlign": "start",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 2,
+			"textWidth": 295.03,
+			"parent": "e73"
+		},
+		{
+			"id": "e80",
+			"name": "Feature card 2",
+			"tag": "article",
+			"box": {
+				"x": 528,
+				"y": 905,
+				"w": 384,
+				"h": 226
+			},
+			"kind": "box",
+			"background": "#FFFFFF",
+			"radius": 16,
+			"border": {
+				"top": {
+					"width": 1,
+					"color": "#E5E7EB"
+				},
+				"right": {
+					"width": 1,
+					"color": "#E5E7EB"
+				},
+				"bottom": {
+					"width": 1,
+					"color": "#E5E7EB"
+				},
+				"left": {
+					"width": 1,
+					"color": "#E5E7EB"
+				}
+			},
+			"clips": false,
+			"parent": "e72"
+		},
+		{
+			"id": "e81",
+			"name": "Feature 2 icon",
+			"tag": "svg",
+			"box": {
+				"x": 561,
+				"y": 938,
+				"w": 48,
+				"h": 48
+			},
+			"kind": "asset",
+			"svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"48\" height=\"48\" viewBox=\"0 0 48 48\" fill=\"none\"><rect width=\"48\" height=\"48\" rx=\"12\" fill=\"#EEF2FF\"/><path d=\"M24 13l9 3.5v6.5c0 5.8-3.8 10-9 12-5.2-2-9-6.2-9-12v-6.5z\" stroke=\"#4F46E5\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M20 24l3 3 5.5-6\" stroke=\"#4F46E5\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>",
+			"parent": "e80"
+		},
+		{
+			"id": "e85",
+			"name": "Feature 2 title",
+			"tag": "h3",
+			"box": {
+				"x": 561,
+				"y": 1010,
+				"w": 318,
+				"h": 28
+			},
+			"kind": "text",
+			"text": "Approve with confidence",
+			"renderedText": "Approve with confidence",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 600,
+				"italic": false,
+				"size": 20,
+				"lineHeight": 28,
+				"letterSpacing": 0
+			},
+			"color": "#101828",
+			"textAlign": "start",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 242.7,
+			"parent": "e80"
+		},
+		{
+			"id": "e86",
+			"name": "Feature 2 text",
+			"tag": "p",
+			"box": {
+				"x": 561,
+				"y": 1046,
+				"w": 318,
+				"h": 52
+			},
+			"kind": "text",
+			"text": "Route every change to the right reviewers and see who signed off.",
+			"renderedText": "Route every change to the right reviewers and see who signed off.",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 400,
+				"italic": false,
+				"size": 16,
+				"lineHeight": 26,
+				"letterSpacing": 0
+			},
+			"color": "#4B5563",
+			"textAlign": "start",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 2,
+			"textWidth": 315.53,
+			"parent": "e80"
+		},
+		{
+			"id": "e87",
+			"name": "Feature card 3",
+			"tag": "article",
+			"box": {
+				"x": 936,
+				"y": 905,
+				"w": 384,
+				"h": 226
+			},
+			"kind": "box",
+			"background": "#FFFFFF",
+			"radius": 16,
+			"border": {
+				"top": {
+					"width": 1,
+					"color": "#E5E7EB"
+				},
+				"right": {
+					"width": 1,
+					"color": "#E5E7EB"
+				},
+				"bottom": {
+					"width": 1,
+					"color": "#E5E7EB"
+				},
+				"left": {
+					"width": 1,
+					"color": "#E5E7EB"
+				}
+			},
+			"clips": false,
+			"parent": "e72"
+		},
+		{
+			"id": "e88",
+			"name": "Feature 3 icon",
+			"tag": "svg",
+			"box": {
+				"x": 969,
+				"y": 938,
+				"w": 48,
+				"h": 48
+			},
+			"kind": "asset",
+			"svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"48\" height=\"48\" viewBox=\"0 0 48 48\" fill=\"none\"><rect width=\"48\" height=\"48\" rx=\"12\" fill=\"#EEF2FF\"/><rect x=\"13\" y=\"13\" width=\"10\" height=\"10\" rx=\"3\" stroke=\"#4F46E5\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"25\" y=\"25\" width=\"10\" height=\"10\" rx=\"3\" stroke=\"#4F46E5\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M23 18h3a4 4 0 0 1 4 4v3\" stroke=\"#4F46E5\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>",
+			"parent": "e87"
+		},
+		{
+			"id": "e93",
+			"name": "Feature 3 title",
+			"tag": "h3",
+			"box": {
+				"x": 969,
+				"y": 1010,
+				"w": 318,
+				"h": 28
+			},
+			"kind": "text",
+			"text": "Connect your stack",
+			"renderedText": "Connect your stack",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 600,
+				"italic": false,
+				"size": 20,
+				"lineHeight": 28,
+				"letterSpacing": 0
+			},
+			"color": "#101828",
+			"textAlign": "start",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 188.45,
+			"parent": "e87"
+		},
+		{
+			"id": "e94",
+			"name": "Feature 3 text",
+			"tag": "p",
+			"box": {
+				"x": 969,
+				"y": 1046,
+				"w": 318,
+				"h": 52
+			},
+			"kind": "text",
+			"text": "Send decisions to your issue tracker and team chat without copying links.",
+			"renderedText": "Send decisions to your issue tracker and team chat without copying links.",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 400,
+				"italic": false,
+				"size": 16,
+				"lineHeight": 26,
+				"letterSpacing": 0
+			},
+			"color": "#4B5563",
+			"textAlign": "start",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 2,
+			"textWidth": 307.17,
+			"parent": "e87"
+		},
+		{
+			"id": "e98",
+			"name": "Testimonial quote",
+			"tag": "blockquote",
+			"box": {
+				"x": 280,
+				"y": 1339,
+				"w": 880,
+				"h": 84
+			},
+			"kind": "text",
+			"text": "“Orbit replaced three tools and a weekly review meeting. Our designers finally see feedback where it happens.”",
+			"renderedText": "“Orbit replaced three tools and a weekly review meeting. Our designers finally see feedback where it happens.”",
+			"textTransform": "none",
+			"font": {
+				"family": "Playfair Display",
+				"weight": 400,
+				"italic": true,
+				"size": 30,
+				"lineHeight": 42,
+				"letterSpacing": 0
+			},
+			"color": "#101828",
+			"textAlign": "center",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 2,
+			"textWidth": 772.09,
+			"parent": "root"
+		},
+		{
+			"id": "e100",
+			"name": "Customer avatar",
+			"tag": "svg",
+			"box": {
+				"x": 586.84,
+				"y": 1455,
+				"w": 48,
+				"h": 48
+			},
+			"kind": "asset",
+			"svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"48\" height=\"48\" viewBox=\"0 0 48 48\" fill=\"none\"><circle cx=\"24\" cy=\"24\" r=\"24\" fill=\"#C7D2FE\"/><circle cx=\"24\" cy=\"19\" r=\"8\" fill=\"#4F46E5\"/><path d=\"M10 40c2.6-6.4 8-10 14-10s11.4 3.6 14 10c-3.8 4.4-8.6 6.8-14 6.8S13.8 44.4 10 40z\" fill=\"#4F46E5\"/></svg>",
+			"parent": "root"
+		},
+		{
+			"id": "e105",
+			"name": "Customer name",
+			"tag": "p",
+			"box": {
+				"x": 650.84,
+				"y": 1457,
+				"w": 202.31,
+				"h": 24
+			},
+			"kind": "text",
+			"text": "Maya Chen",
+			"renderedText": "Maya Chen",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 600,
+				"italic": false,
+				"size": 16,
+				"lineHeight": 24,
+				"letterSpacing": 0
+			},
+			"color": "#101828",
+			"textAlign": "left",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 87.03,
+			"parent": "root"
+		},
+		{
+			"id": "e106",
+			"name": "Customer role",
+			"tag": "p",
+			"box": {
+				"x": 650.84,
+				"y": 1481,
+				"w": 202.31,
+				"h": 20
+			},
+			"kind": "text",
+			"text": "Head of Design, Lumen Health",
+			"renderedText": "Head of Design, Lumen Health",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 400,
+				"italic": false,
+				"size": 14,
+				"lineHeight": 20,
+				"letterSpacing": 0
+			},
+			"color": "#6B7280",
+			"textAlign": "left",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 202.31,
+			"parent": "root"
+		},
+		{
+			"id": "e107",
+			"name": "Story link",
+			"tag": "p",
+			"box": {
+				"x": 120,
+				"y": 1527,
+				"w": 1200,
+				"h": 20
+			},
+			"kind": "text",
+			"text": "Read the full story on our blog.",
+			"renderedText": "Read the full story on our blog.",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 400,
+				"italic": false,
+				"size": 14,
+				"lineHeight": 20,
+				"letterSpacing": 0
+			},
+			"color": "#4B5563",
+			"textAlign": "center",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 203.63,
+			"runs": [
+				{
+					"start": 0,
+					"end": 27,
+					"family": "Inter",
+					"weight": 400,
+					"italic": false,
+					"size": 14,
+					"lineHeight": 20,
+					"letterSpacing": 0,
+					"color": "#4B5563",
+					"underline": false
+				},
+				{
+					"start": 27,
+					"end": 31,
+					"family": "Inter",
+					"weight": 400,
+					"italic": false,
+					"size": 14,
+					"lineHeight": 20,
+					"letterSpacing": 0,
+					"color": "#4F46E5",
+					"underline": true
+				},
+				{
+					"start": 31,
+					"end": 32,
+					"family": "Inter",
+					"weight": 400,
+					"italic": false,
+					"size": 14,
+					"lineHeight": 20,
+					"letterSpacing": 0,
+					"color": "#4B5563",
+					"underline": false
+				}
+			],
+			"parent": "root"
+		},
+		{
+			"id": "e109",
+			"name": "CTA band",
+			"tag": "section",
+			"box": {
+				"x": 0,
+				"y": 1659,
+				"w": 1440,
+				"h": 344
+			},
+			"kind": "box",
+			"background": "#312E81",
+			"radius": 0,
+			"clips": false,
+			"parent": "root"
+		},
+		{
+			"id": "e111",
+			"name": "CTA title",
+			"tag": "h2",
+			"box": {
+				"x": 120,
+				"y": 1747,
+				"w": 1200,
+				"h": 44
+			},
+			"kind": "text",
+			"text": "Ready for calmer release days?",
+			"renderedText": "Ready for calmer release days?",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 700,
+				"italic": false,
+				"size": 36,
+				"lineHeight": 44,
+				"letterSpacing": -0.6
+			},
+			"color": "#FFFFFF",
+			"textAlign": "center",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 532.44,
+			"parent": "e109"
+		},
+		{
+			"id": "e112",
+			"name": "CTA text",
+			"tag": "p",
+			"box": {
+				"x": 120,
+				"y": 1807,
+				"w": 1200,
+				"h": 28
+			},
+			"kind": "text",
+			"text": "Join the product teams that review, approve and ship in one place.",
+			"renderedText": "Join the product teams that review, approve and ship in one place.",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 400,
+				"italic": false,
+				"size": 18,
+				"lineHeight": 28,
+				"letterSpacing": 0
+			},
+			"color": "#C7D2FE",
+			"textAlign": "center",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 564.03,
+			"parent": "e109"
+		},
+		{
+			"id": "e114",
+			"name": "CTA button",
+			"tag": "a",
+			"box": {
+				"x": 644.75,
+				"y": 1867,
+				"w": 150.48,
+				"h": 48
+			},
+			"kind": "box",
+			"background": "#FFFFFF",
+			"radius": 8,
+			"clips": false,
+			"parent": "e109"
+		},
+		{
+			"id": "e115",
+			"name": "CTA button label",
+			"tag": "span",
+			"box": {
+				"x": 666.75,
+				"y": 1879,
+				"w": 106.48,
+				"h": 24
+			},
+			"kind": "text",
+			"text": "Start free trial",
+			"renderedText": "Start free trial",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 600,
+				"italic": false,
+				"size": 16,
+				"lineHeight": 24,
+				"letterSpacing": 0
+			},
+			"color": "#312E81",
+			"textAlign": "center",
+			"alignHint": "center",
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 106.48,
+			"parent": "e114"
+		},
+		{
+			"id": "e116",
+			"name": "Footer",
+			"tag": "footer",
+			"box": {
+				"x": 0,
+				"y": 2003,
+				"w": 1440,
+				"h": 177
+			},
+			"kind": "box",
+			"radius": 0,
+			"border": {
+				"top": {
+					"width": 1,
+					"color": "#E5E7EB"
+				}
+			},
+			"clips": false,
+			"parent": "root"
+		},
+		{
+			"id": "e120",
+			"name": "Footer logo mark",
+			"tag": "svg",
+			"box": {
+				"x": 120,
+				"y": 2052,
+				"w": 28,
+				"h": 28
+			},
+			"kind": "asset",
+			"svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"28\" height=\"28\" viewBox=\"0 0 28 28\" fill=\"none\"><rect width=\"28\" height=\"28\" rx=\"8\" fill=\"#4F46E5\"/><circle cx=\"14\" cy=\"14\" r=\"6\" stroke=\"#FFFFFF\" stroke-width=\"2.5\"/><circle cx=\"21\" cy=\"7.5\" r=\"2.5\" fill=\"#A5B4FC\"/></svg>",
+			"parent": "e116"
+		},
+		{
+			"id": "e124",
+			"name": "Footer wordmark",
+			"tag": "span",
+			"box": {
+				"x": 158,
+				"y": 2052,
+				"w": 47.23,
+				"h": 28
+			},
+			"kind": "text",
+			"text": "Orbit",
+			"renderedText": "Orbit",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 700,
+				"italic": false,
+				"size": 20,
+				"lineHeight": 28,
+				"letterSpacing": -0.4
+			},
+			"color": "#101828",
+			"textAlign": "start",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 47.23,
+			"parent": "e116"
+		},
+		{
+			"id": "e125",
+			"name": "Footer links",
+			"tag": "nav",
+			"box": {
+				"x": 1014.31,
+				"y": 2056,
+				"w": 305.69,
+				"h": 20
+			},
+			"kind": "container",
+			"direction": "horizontal",
+			"gap": 28,
+			"alignItems": "normal",
+			"justifyContent": "normal",
+			"parent": "e116",
+			"children": [
+				"e126",
+				"e127",
+				"e128",
+				"e129"
+			],
+			"measuredGaps": [
+				28,
+				28,
+				28
+			]
+		},
+		{
+			"id": "e126",
+			"name": "Footer link Product",
+			"tag": "a",
+			"box": {
+				"x": 1014.31,
+				"y": 2056,
+				"w": 52.52,
+				"h": 20
+			},
+			"kind": "text",
+			"text": "Product",
+			"renderedText": "Product",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 500,
+				"italic": false,
+				"size": 14,
+				"lineHeight": 20,
+				"letterSpacing": 0
+			},
+			"color": "#4B5563",
+			"textAlign": "start",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 52.52,
+			"parent": "e125"
+		},
+		{
+			"id": "e127",
+			"name": "Footer link Pricing",
+			"tag": "a",
+			"box": {
+				"x": 1094.83,
+				"y": 2056,
+				"w": 46.73,
+				"h": 20
+			},
+			"kind": "text",
+			"text": "Pricing",
+			"renderedText": "Pricing",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 500,
+				"italic": false,
+				"size": 14,
+				"lineHeight": 20,
+				"letterSpacing": 0
+			},
+			"color": "#4B5563",
+			"textAlign": "start",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 46.73,
+			"parent": "e125"
+		},
+		{
+			"id": "e128",
+			"name": "Footer link Changelog",
+			"tag": "a",
+			"box": {
+				"x": 1169.56,
+				"y": 2056,
+				"w": 72.63,
+				"h": 20
+			},
+			"kind": "text",
+			"text": "Changelog",
+			"renderedText": "Changelog",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 500,
+				"italic": false,
+				"size": 14,
+				"lineHeight": 20,
+				"letterSpacing": 0
+			},
+			"color": "#4B5563",
+			"textAlign": "start",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 72.63,
+			"parent": "e125"
+		},
+		{
+			"id": "e129",
+			"name": "Footer link Privacy",
+			"tag": "a",
+			"box": {
+				"x": 1270.19,
+				"y": 2056,
+				"w": 49.81,
+				"h": 20
+			},
+			"kind": "text",
+			"text": "Privacy",
+			"renderedText": "Privacy",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 500,
+				"italic": false,
+				"size": 14,
+				"lineHeight": 20,
+				"letterSpacing": 0
+			},
+			"color": "#4B5563",
+			"textAlign": "start",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 49.81,
+			"parent": "e125"
+		},
+		{
+			"id": "e131",
+			"name": "Copyright",
+			"tag": "p",
+			"box": {
+				"x": 120,
+				"y": 2112,
+				"w": 284.06,
+				"h": 20
+			},
+			"kind": "text",
+			"text": "© 2026 Orbit Labs, Inc. All rights reserved.",
+			"renderedText": "© 2026 Orbit Labs, Inc. All rights reserved.",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 400,
+				"italic": false,
+				"size": 14,
+				"lineHeight": 20,
+				"letterSpacing": 0
+			},
+			"color": "#6B7280",
+			"textAlign": "start",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 284.06,
+			"parent": "e116"
+		},
+		{
+			"id": "e133",
+			"name": "Status dot",
+			"tag": "span",
+			"box": {
+				"x": 1137.53,
+				"y": 2118,
+				"w": 8,
+				"h": 8
+			},
+			"kind": "box",
+			"background": "#10B981",
+			"radius": 4,
+			"clips": false,
+			"parent": "e116"
+		},
+		{
+			"id": "e134",
+			"name": "Status text",
+			"tag": "span",
+			"box": {
+				"x": 1153.53,
+				"y": 2112,
+				"w": 166.47,
+				"h": 20
+			},
+			"kind": "text",
+			"text": "Status updated 10:42 AM",
+			"renderedText": "Status updated 10:42 AM",
+			"textTransform": "none",
+			"font": {
+				"family": "Inter",
+				"weight": 400,
+				"italic": false,
+				"size": 14,
+				"lineHeight": 20,
+				"letterSpacing": 0
+			},
+			"color": "#6B7280",
+			"textAlign": "start",
+			"alignHint": null,
+			"decoration": null,
+			"lines": 1,
+			"textWidth": 166.47,
+			"parent": "e116"
+		}
+	],
+	"warnings": []
+}

@@ -1,0 +1,12 @@
+{
+	"$comment": "Frames built from design-dump/*.json on the page \"Test frames\" of the kit's Figma file (file link not stored here; see README). One frame per page path. The (control) frames are exact clones of the originals and are mapped to the clean paths.",
+	"page": { "name": "Test frames", "nodeId": "0:1" },
+	"frames": [
+		{ "name": "Home", "nodeId": "4:2", "x": 0, "y": 0, "width": 1440, "height": 2180, "path": "/", "variant": "buggy", "builtFrom": "design-dump/home.json", "script": "figma/scripts/home.js" },
+		{ "name": "Pricing", "nodeId": "6:2", "x": 1640, "y": 0, "width": 1440, "height": 1785, "path": "/pricing", "variant": "buggy", "builtFrom": "design-dump/pricing.json", "script": "figma/scripts/pricing.js" },
+		{ "name": "Home Mobile", "nodeId": "7:2", "x": 3280, "y": 0, "width": 375, "height": 2738, "path": "/m", "variant": "buggy", "builtFrom": "design-dump/mobile.json", "script": "figma/scripts/mobile.js" },
+		{ "name": "Home (control)", "nodeId": "10:2", "x": 3855, "y": 0, "width": 1440, "height": 2180, "path": "/clean", "variant": "clean", "cloneOf": "4:2" },
+		{ "name": "Pricing (control)", "nodeId": "10:68", "x": 5495, "y": 0, "width": 1440, "height": 1785, "path": "/clean/pricing", "variant": "clean", "cloneOf": "6:2" },
+		{ "name": "Home Mobile (control)", "nodeId": "10:176", "x": 7135, "y": 0, "width": 375, "height": 2738, "path": "/clean/m", "variant": "clean", "cloneOf": "7:2" }
+	]
+}

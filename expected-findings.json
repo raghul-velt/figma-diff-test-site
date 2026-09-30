@@ -1,0 +1,222 @@
+{
+	"$comment": "Answer key for the Figma Comparison agent (id figma-design-diff) on the Orbit test site. One entry per mapped page path. Buggy paths list every seeded difference; clean paths must produce no findings at all. A finding matches an expected item when its metadata.figmaDiff.issue is one of `match.issues`, its metadata.figmaDiff.designName is one of `match.designLayers` (when given) and its expected/actual text contains `match.textIncludes` (when given). Verified before publishing by running the comparison engine locally against the pages and the frames: every detectable item below was produced, and nothing else except the listed known noise.",
+	"version": 1,
+	"agentId": "figma-design-diff",
+	"verifiedAt": "2026-09-30",
+	"frames": [
+		{ "name": "Home", "nodeId": "4:2", "path": "/", "variant": "buggy", "width": 1440, "height": 2180 },
+		{ "name": "Pricing", "nodeId": "6:2", "path": "/pricing", "variant": "buggy", "width": 1440, "height": 1785 },
+		{ "name": "Home Mobile", "nodeId": "7:2", "path": "/m", "variant": "buggy", "width": 375, "height": 2738 },
+		{ "name": "Home (control)", "nodeId": "10:2", "path": "/clean", "variant": "clean", "width": 1440, "height": 2180 },
+		{ "name": "Pricing (control)", "nodeId": "10:68", "path": "/clean/pricing", "variant": "clean", "width": 1440, "height": 1785 },
+		{ "name": "Home Mobile (control)", "nodeId": "10:176", "path": "/clean/m", "variant": "clean", "width": 375, "height": 2738 }
+	],
+	"engineTolerances": {
+		"textMatch": "design and page text are paired when their similarity is at least 0.6; a pair is identical only when the rendered strings are equal",
+		"typography": "size max(1px, 6%); weight differences of 200 or more; line height max(2px, 10%); letter spacing 0.5px; family by canonical name",
+		"colour": "CIEDE2000 above 2 (low), above 5 (medium), above 10 (high); text of matched pairs, and backgrounds only for design boxes covering at least 2% of the frame",
+		"layout": "after removing the median vertical shift: position max(8px, 2% of the viewport width) (28.8px at 1440, 8px at 375); height max(6px, 10%); reading order needs 3 or more elements out of order; auto-layout gaps max(8px, 25%) between adjacent children that are text or image layers",
+		"assets": "matched by overlap (IoU 0.4) or nearby centre; aspect ratio difference above 8%",
+		"ignored": "clock times, dates, standalone prices and counters, cookie and consent text"
+	},
+	"pages": [
+		{
+			"path": "/",
+			"frame": "Home",
+			"variant": "buggy",
+			"viewport": { "width": 1440, "mobile": false },
+			"expected": [
+				{
+					"id": "a", "category": "content", "severity": "medium", "detectable": true,
+					"summary": "Hero subtitle says 14-day instead of 30-day",
+					"match": { "issues": ["content.mismatch"], "designLayers": ["Hero subtitle"] },
+					"design": { "layer": "Hero subtitle", "nodeId": "4:21", "text": "Start your 30-day free trial and ship reviews faster." },
+					"page": { "selector": ".hero-subtitle", "text": "Start your 14-day free trial and ship reviews faster." },
+					"note": "Similarity is about 0.96, so the pair is matched and reported as a mismatch rather than missing plus extra."
+				},
+				{
+					"id": "b", "category": "content", "severity": "medium", "detectable": true,
+					"summary": "Trust line removed",
+					"match": { "issues": ["content.missing"], "designLayers": ["Trust line"] },
+					"design": { "layer": "Trust line", "nodeId": "4:27", "text": "No credit card required." },
+					"page": { "selector": ".hero .trust", "text": null },
+					"note": "Medium, not high: the line is 14px, below the 20px heading threshold. The hero has a fixed height, so nothing else moves."
+				},
+				{
+					"id": "c", "category": "content", "severity": "info", "detectable": true,
+					"summary": "Extra announcement bar above the nav",
+					"match": { "issues": ["content.extra"], "textIncludes": "AI summaries" },
+					"design": { "layer": null, "text": null },
+					"page": { "selector": ".announcement-text", "text": "New: AI summaries for every project update" },
+					"note": "Page-only text of 4 or more words is reported as extra (info severity). The 40px bar pushes the whole page down; the layout check removes that shift. The model may drop an info-level extra, which would show as a miss."
+				},
+				{
+					"id": "d", "category": "typography", "severity": "low", "detectable": true,
+					"summary": "Hero title 48px instead of 56px",
+					"match": { "issues": ["typography.size"], "designLayers": ["Hero title"] },
+					"design": { "layer": "Hero title", "nodeId": "4:20", "text": "Design reviews without the wait", "value": "56px" },
+					"page": { "selector": ".hero h1", "value": "48px" },
+					"note": "14% smaller: above the 6% tolerance, below the 25% medium threshold. Line height stays 64px and the title stays on two lines, so its box does not change."
+				},
+				{
+					"id": "e", "category": "typography", "severity": "medium", "detectable": true,
+					"summary": "Feature card titles weight 400 instead of 600",
+					"match": { "issues": ["typography.weight"], "designLayers": ["Feature 1 title", "Feature 2 title", "Feature 3 title"] },
+					"design": { "layers": ["Feature 1 title", "Feature 2 title", "Feature 3 title"], "nodeIds": ["4:76", "4:87", "4:100"], "value": "600" },
+					"page": { "selector": ".feature-card h3", "value": "400" },
+					"note": "The three identical differences are grouped into one finding with count 3."
+				},
+				{
+					"id": "f", "category": "typography", "severity": "high", "detectable": true,
+					"summary": "Testimonial quote set in Inter instead of Playfair Display",
+					"match": { "issues": ["typography.family"], "designLayers": ["Testimonial quote"] },
+					"design": { "layer": "Testimonial quote", "nodeId": "4:102", "value": "Playfair Display" },
+					"page": { "selector": ".quote", "value": "Inter, system-ui, sans-serif" },
+					"note": "The quote wraps to two lines in both fonts, so the family change does not move anything."
+				},
+				{
+					"id": "g", "category": "color", "severity": "medium", "detectable": false,
+					"summary": "Nav Get started button background #7C3AED instead of #4F46E5",
+					"match": { "issues": ["color.background"], "designLayers": ["Get started button"] },
+					"design": { "layer": "Get started button", "nodeId": "4:18", "value": "#4F46E5" },
+					"page": { "selector": ".nav .btn-primary", "value": "#7C3AED" },
+					"note": "KNOWN ENGINE GAP. Background colours are compared only for design boxes covering at least 2% of the frame; this button is about 0.14% (107x40 of 1440x2180). The label text colour is unchanged, so no candidate exists and the model cannot report it. If the engine ever compares small boxes, expect color.background with delta-E about 6.5 (medium)."
+				},
+				{
+					"id": "h", "category": "color", "severity": "high", "detectable": true,
+					"summary": "Features eyebrow colour #6B7280 instead of #4F46E5",
+					"match": { "issues": ["color.text"], "designLayers": ["Features eyebrow"] },
+					"design": { "layer": "Features eyebrow", "nodeId": "4:64", "text": "Why teams switch (UPPER)", "value": "#4F46E5" },
+					"page": { "selector": ".features .eyebrow", "value": "#6B7280" },
+					"note": "Delta-E about 20.6. The eyebrow is also an uppercase trap (text-transform on the page, textCase UPPER in the frame)."
+				},
+				{
+					"id": "i", "category": "layout", "severity": "medium", "detectable": true,
+					"summary": "Hero CTA row shifted 64px right",
+					"match": { "issues": ["layout.position"], "designLayers": ["Start free trial label", "Book a demo label"] },
+					"design": { "layers": ["Start free trial label", "Book a demo label"], "nodeIds": ["4:24", "4:26"] },
+					"page": { "selector": ".hero .cta-row", "value": "margin-left: 64px" },
+					"expectedCount": 2,
+					"note": "64px is beyond the 28.8px position tolerance at 1440. Button labels are compared by their centre (they are centred text layers)."
+				},
+				{
+					"id": "j", "category": "layout", "severity": "medium", "detectable": true,
+					"summary": "Feature cards 2 and 3 swapped",
+					"match": { "issues": ["layout.order", "layout.position"], "designLayers": ["Feature 2 title", "Feature 2 text", "Feature 3 title", "Feature 3 text"] },
+					"design": { "layers": ["Feature 2 title", "Feature 2 text", "Feature 3 title", "Feature 3 text"], "nodeIds": ["4:87", "4:88", "4:100", "4:101"] },
+					"page": { "selector": ".feature-grid", "value": "DOM order 1, 3, 2" },
+					"expectedCount": 4,
+					"note": "Expected as four layout.position findings (the swapped titles and texts move by hundreds of px). layout.order is also acceptable but will not normally fire: text rows are read left to right per row, so only two elements are out of order and the order check needs three."
+				},
+				{
+					"id": "k", "category": "layout", "severity": "medium", "detectable": true,
+					"summary": "Feature card gap 64px instead of 24px",
+					"match": { "issues": ["layout.spacing", "layout.position"], "designLayers": ["horizontal stack", "Features row", "Feature 2 icon", "Feature 3 icon"] },
+					"design": { "layers": ["Features row", "Feature 2 icon", "Feature 3 icon"], "nodeIds": ["4:67", "4:86", "4:99"], "value": "itemSpacing 24" },
+					"page": { "selector": ".feature-grid", "value": "gap: 64px" },
+					"expectedCount": 2,
+					"note": "PARTLY AN ENGINE GAP. The auto-layout spacing check only measures gaps between direct children that are text or image layers; the Features row's children are card frames, so layout.spacing is not produced. The gap change is still visible as the icons in card slots 2 and 3 sitting 40px and 80px to the right (layout.position, confidence 60, matched by nearby centre). The swapped titles and texts belong to (j)."
+				},
+				{
+					"id": "l", "category": "assets", "severity": "low", "detectable": true,
+					"summary": "First feature card icon missing",
+					"match": { "issues": ["assets.missing"], "designLayers": ["Feature 1 icon"] },
+					"design": { "layer": "Feature 1 icon", "nodeId": "4:75", "box": "48x48" },
+					"page": { "selector": ".feature-card:first-child .feature-icon", "value": "empty 48x48 slot" },
+					"note": "Low because it is an icon, not an image. The empty slot keeps its size, so the title and text do not move."
+				},
+				{
+					"id": "m", "category": "assets", "severity": "medium", "detectable": true,
+					"summary": "Hero illustration rendered 480x240 instead of 480x320",
+					"match": { "issues": ["assets.wrongAspect"], "designLayers": ["Hero illustration"] },
+					"design": { "layer": "Hero illustration", "nodeId": "4:62", "box": "480x320" },
+					"page": { "selector": ".hero-art svg", "box": "480x240" },
+					"note": "Aspect 1.5 against 2.0 (25% off, above the 8% tolerance). The same asset pair also produces layout.size, listed under alsoAcceptable."
+				}
+			],
+			"alsoAcceptable": [
+				{ "for": "m", "match": { "issues": ["layout.size"], "designLayers": ["Hero illustration"] }, "note": "The squashed illustration is also 80px shorter than the design box." }
+			],
+			"knownNoise": [
+				{
+					"cause": "c",
+					"match": { "issues": ["color.background"], "designLayers": ["Nav bar"] },
+					"note": "KNOWN ENGINE NOISE. Background counterparts are found by overlap without removing the page-wide vertical shift, so the design's white 73px Nav bar overlaps the new dark 40px announcement bar more than the real nav (IoU 0.55 against 0.29) and is reported as #ffffff against #111827. The nav itself is unchanged. Expect this until background matching accounts for the shift."
+				}
+			]
+		},
+		{
+			"path": "/pricing",
+			"frame": "Pricing",
+			"variant": "buggy",
+			"viewport": { "width": 1440, "mobile": false },
+			"expected": [
+				{
+					"id": "n", "category": "content", "severity": "medium", "detectable": true,
+					"summary": "Pro plan description says small teams instead of growing teams",
+					"match": { "issues": ["content.mismatch"], "designLayers": ["Pro plan description"] },
+					"design": { "layer": "Pro plan description", "nodeId": "6:69", "text": "Best for growing teams" },
+					"page": { "selector": ".plan-card--featured .plan-desc", "text": "Best for small teams" },
+					"note": "Similarity about 0.68, just above the 0.6 pairing floor."
+				},
+				{
+					"id": "o", "category": "typography", "severity": "low", "detectable": true,
+					"summary": "Plan names 24px instead of 20px",
+					"match": { "issues": ["typography.size"], "designLayers": ["Starter plan name", "Pro plan name", "Enterprise plan name"] },
+					"design": { "layers": ["Starter plan name", "Pro plan name", "Enterprise plan name"], "nodeIds": ["6:24", "6:68", "6:110"], "value": "20px" },
+					"page": { "selector": "[data-testid=\"plan-name\"]", "value": "24px" },
+					"note": "Grouped into one finding with count 3 (any of the three layers may be named). The three elements share data-testid values, so the finding must still pin to a unique selector. Line height stays 28px, so nothing moves."
+				},
+				{
+					"id": "p", "category": "color", "severity": "medium", "detectable": true,
+					"summary": "Highlighted plan background #FFFFFF instead of #EEF2FF",
+					"match": { "issues": ["color.background"], "designLayers": ["Pro plan card"] },
+					"design": { "layer": "Pro plan card", "nodeId": "6:65", "value": "#EEF2FF" },
+					"page": { "selector": ".plan-card--featured", "value": "#FFFFFF" },
+					"note": "Delta-E about 6.5 (medium). The card covers about 7.4% of the frame, above the 2% needed for a background comparison."
+				}
+			],
+			"alsoAcceptable": [],
+			"knownNoise": []
+		},
+		{
+			"path": "/m",
+			"frame": "Home Mobile",
+			"variant": "buggy",
+			"viewport": { "width": 375, "mobile": true },
+			"expected": [
+				{
+					"id": "q", "category": "content", "severity": "medium", "detectable": true,
+					"summary": "Mobile hero CTA says Start trial instead of Start free trial",
+					"match": { "issues": ["content.mismatch"], "designLayers": ["Start free trial label"] },
+					"design": { "layer": "Start free trial label", "nodeId": "7:22", "text": "Start free trial" },
+					"page": { "selector": ".hero .cta-row .btn-primary span", "text": "Start trial" },
+					"note": "Similarity about 0.69. The CTA band further down still says Start free trial on both sides and must pair with itself."
+				},
+				{
+					"id": "r", "category": "assets", "severity": "low", "detectable": true,
+					"summary": "Hamburger menu icon missing",
+					"match": { "issues": ["assets.missing"], "designLayers": ["Menu icon"] },
+					"design": { "layer": "Menu icon", "nodeId": "7:17", "box": "24x18" },
+					"page": { "selector": ".menu-btn", "value": "empty 24x18 button" },
+					"note": "Low because it is an icon. The empty button keeps its size."
+				}
+			],
+			"alsoAcceptable": [],
+			"knownNoise": []
+		},
+		{ "path": "/clean", "frame": "Home (control)", "variant": "clean", "viewport": { "width": 1440, "mobile": false }, "expected": [] },
+		{ "path": "/clean/pricing", "frame": "Pricing (control)", "variant": "clean", "viewport": { "width": 1440, "mobile": false }, "expected": [] },
+		{ "path": "/clean/m", "frame": "Home Mobile (control)", "variant": "clean", "viewport": { "width": 375, "mobile": true }, "expected": [] }
+	],
+	"traps": [
+		{ "id": "T1", "summary": "Clock time differs between page and frame", "paths": ["/", "/pricing", "/m", "/clean", "/clean/pricing", "/clean/m"], "page": "Status updated 10:42 AM", "design": "Status updated 9:15 AM", "why": "Clock times are dynamic text and are excluded from matching." },
+		{ "id": "T2", "summary": "Standalone price differs between page and frame", "paths": ["/pricing", "/clean/pricing"], "page": "$29/month (Pro plan price)", "design": "$24/month", "why": "A string that is only a price is dynamic text and is excluded." },
+		{ "id": "T3", "summary": "Repeated data-testid values", "paths": ["/pricing", "/clean/pricing"], "page": "three elements each with data-testid=\"plan-card\" and data-testid=\"plan-name\"", "why": "Selectors must be unique; nothing may be reported about the repetition itself, and (o) must be one grouped finding." },
+		{ "id": "T4", "summary": "Uppercase via CSS", "paths": ["/", "/pricing", "/clean", "/clean/pricing"], "page": "Sign in (text-transform: uppercase, renders SIGN IN)", "design": "Sign in with textCase UPPER", "why": "Case is compared as rendered; both render SIGN IN. Same for the WHY TEAMS SWITCH eyebrow on every Home frame." },
+		{ "id": "T5", "summary": "Rich text with an inline link", "paths": ["/", "/m", "/clean", "/clean/m", "/pricing", "/clean/pricing"], "page": "Read the full story on our <a>blog</a>. / See our <a>billing guide</a> for details.", "design": "one text layer with a coloured, underlined range (mixed style)", "why": "The sentence is one text run on the page and one layer in the design; mixed-style layers are skipped for typography." },
+		{ "id": "T6", "summary": "oklch() colour", "paths": ["/", "/pricing", "/m", "/clean", "/clean/pricing", "/clean/m"], "page": "body colour oklch(0.21 0.034 264.665) inherited by every heading", "design": "#101828", "why": "The engine converts CSS Color 4 values to sRGB; they are the same colour." },
+		{ "id": "T7", "summary": "Scroll-revealed section", "paths": ["/", "/m", "/clean", "/clean/m"], "page": "testimonial section at opacity 0 until an IntersectionObserver adds .is-visible", "why": "The capture reveals and pins it while scrolling; its text must be found, not reported missing." },
+		{ "id": "T8", "summary": "Duplicate strings on one page", "paths": ["/", "/m", "/clean", "/clean/m", "/pricing", "/clean/pricing"], "page": "Start free trial (hero and CTA band), Orbit (nav and footer), Product and Pricing (nav and footer)", "why": "Identical strings must pair with the nearest counterpart, not with each other." }
+	]
+}
